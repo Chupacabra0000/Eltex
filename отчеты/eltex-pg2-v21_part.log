@@ -1,19 +1,15 @@
-Script started on 2026-10-09 12:48:01+07:00 [TERM="dumb" TTY="/dev/pts/0" COLUMNS="145" LINES="43"]
+Script started on 2026-10-09 19:15:41+07:00 [TERM="dumb" TTY="/dev/pts/70" COLUMNS="145" LINES="43"]
 eltex-pg2-v21@eltex-2026-autumn:~$ screen -ls
 There is a screen on:
-
-	3202742.eltex-pg2-v21_part2	(10/09/2026 12:47:51 PM)	(Attached)
+	3671634.eltex-pg2-v21_part2	(10/09/2026 07:15:04 PM)	(Attached)
 1 Socket in /run/screen/S-eltex-pg2-v21.
-
-eltex-pg2-v21@eltex-2026-autumn:~$ ls
+eltex-pg2-v21@eltex-2026-autumn:~$ ls
 ls           lsattr       lsb_release  lsfd         lsipc        lslocks      lsmem        lsmount      lsof         lss          lsusb
 ls1          lsblk        lscpu        lsinitramfs  lsirq        lslogins     lsmod        lsns         lspci        lst          lsx
-eltex-pg2-v21@eltex-2026-autumn:~$ echo $HIST
+eltex-pg2-v21@eltex-2026-autumn:~$ echo $HIST
 $HISTCMD       $HISTCONTROL   $HISTFILE      $HISTFILESIZE  $HISTSIZE      
 eltex-pg2-v21@eltex-2026-autumn:~$ echo $HISTFILESIZE
 2000
-eltex-pg2-v21@eltex-2026-autumn:~$ echo $HISTSIZE
-1000
 eltex-pg2-v21@eltex-2026-autumn:~$ ls -d ~/.*
 /home/eltex-pg2-v21/.bash_history
 /home/eltex-pg2-v21/.bash_logout
@@ -25,225 +21,231 @@ eltex-pg2-v21@eltex-2026-autumn:~$ ls -d ~/.*
 /home/eltex-pg2-v21/.ssh
 /home/eltex-pg2-v21/.viminfo
 eltex-pg2-v21@eltex-2026-autumn:~$ history 10
-  313  echo "======================================================================"
-  314  ./razdel_2.sh
-  315  exit
-  316  TERM=dumb script "${USER}_part2.log"
-  317  screen -ls
-  318  echo $HISTFILESZIE
-  319  echo $HISTFILESIZE
-  320  echo $HISTSIZE
-  321  ls -d ~/.*
-  322  history 10
+  448  screen -X -S el quit
+  449  screen -ls
+  450  c
+  451  screen -S ${USER}_part2
+  452  ls
+  453  c
+  454  screen -ls
+  455  echo $HISTFILESIZE
+  456  ls -d ~/.*
+  457  history 10
 eltex-pg2-v21@eltex-2026-autumn:~$ HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S"
-eltex-pg2-v21@eltex-2026-autumn:~$ history 10     
-  315  2026-10-09 12:48:01exit
-  316  2026-10-09 12:48:01TERM=dumb script "${USER}_part2.log"
-  317  2026-10-09 12:48:28screen -ls
-  318  2026-10-09 12:49:23echo $HISTFILESZIE
-  319  2026-10-09 12:49:40echo $HISTFILESIZE
-  320  2026-10-09 12:49:54echo $HISTSIZE
-  321  2026-10-09 12:50:29ls -d ~/.*
-  322  2026-10-09 12:50:48history 10
-  323  2026-10-09 12:51:05HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S"
-  324  2026-10-09 12:51:08history 10
-eltex-pg2-v21@eltex-2026-autumn:~$ date
-Fri Oct  9 12:51:28 PM +07 2026
 eltex-pg2-v21@eltex-2026-autumn:~$ history 10
-  317  2026-10-09 12:48:28screen -ls
-  318  2026-10-09 12:49:23echo $HISTFILESZIE
-  319  2026-10-09 12:49:40echo $HISTFILESIZE
-  320  2026-10-09 12:49:54echo $HISTSIZE
-  321  2026-10-09 12:50:29ls -d ~/.*
-  322  2026-10-09 12:50:48history 10
-  323  2026-10-09 12:51:05HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S"
-  324  2026-10-09 12:51:08history 10
-  325  2026-10-09 12:51:28date
-  326  2026-10-09 12:51:40history 10
+  450  2026-10-09 12:47:23c
+  451  2026-10-09 12:47:51screen -S ${USER}_part2
+  452  2026-10-09 12:58:24ls
+  453  2026-10-09 12:58:29c
+  454  2026-10-09 19:15:54screen -ls
+  455  2026-10-09 19:16:58echo $HISTFILESIZE
+  456  2026-10-09 19:17:20ls -d ~/.*
+  457  2026-10-09 19:17:30history 10
+  458  2026-10-09 19:17:43HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S"
+  459  2026-10-09 19:17:56history 10
 eltex-pg2-v21@eltex-2026-autumn:~$ tail -n 10 ~/.bash_history
-echo "создание в домашнем каталоге подкаталоги для каждого месяца текущего года вида YYYY-MM"
-#1791524327
-echo "---> mkdir -p '\$(date +%Y)'-{01..12}"
-#1791524327
-mkdir "$(date +%Y)"-{01..12}
-#1791524327
-echo "======================================================================"
-./razdel_2.sh
-exit
-TERM=dumb script "${USER}_part2.log"
+#1791524840
+screen -ls
+#1791524843
+c
+#1791524871
+screen -S ${USER}_part2
+#1791525504
+ls
+#1791525509
+c
 eltex-pg2-v21@eltex-2026-autumn:~$ PROMPT_COMMAND="history -a"
 eltex-pg2-v21@eltex-2026-autumn:~$ whoami
 eltex-pg2-v21
 eltex-pg2-v21@eltex-2026-autumn:~$ history 10
-  321  2026-10-09 12:50:29ls -d ~/.*
-  322  2026-10-09 12:50:48history 10
-  323  2026-10-09 12:51:05HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S"
-  324  2026-10-09 12:51:08history 10
-  325  2026-10-09 12:51:28date
-  326  2026-10-09 12:51:40history 10
-  327  2026-10-09 12:52:14tail -n 10 ~/.bash_history
-  328  2026-10-09 12:52:29PROMPT_COMMAND="history -a"
-  329  2026-10-09 12:52:42whoami
-  330  2026-10-09 12:53:06history 10
+  454  2026-10-09 19:15:54screen -ls
+  455  2026-10-09 19:16:58echo $HISTFILESIZE
+  456  2026-10-09 19:17:20ls -d ~/.*
+  457  2026-10-09 19:17:30history 10
+  458  2026-10-09 19:17:43HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S"
+  459  2026-10-09 19:17:56history 10
+  460  2026-10-09 19:18:46tail -n 10 ~/.bash_history
+  461  2026-10-09 19:19:13PROMPT_COMMAND="history -a"
+  462  2026-10-09 19:19:18whoami
+  463  2026-10-09 19:19:35history 10
+eltex-pg2-v21@eltex-2026-autumn:~$ 
 eltex-pg2-v21@eltex-2026-autumn:~$ tail -n 10 ~/.bash_history
-#1791525100
+#1791548276
 history 10
-#1791525134
+#1791548326
 tail -n 10 ~/.bash_history
-#1791525149
+#1791548353
 PROMPT_COMMAND="history -a"
-#1791525162
+#1791548358
 whoami
-#1791525186
+#1791548375
 history 10
+eltex-pg2-v21@eltex-2026-autumn:~$ 
 eltex-pg2-v21@eltex-2026-autumn:~$ DATE=$(date +%Y-%m-%d)
 eltex-pg2-v21@eltex-2026-autumn:~$ echo "Дата = $DATE"
 Дата = 2026-10-09
 eltex-pg2-v21@eltex-2026-autumn:~$ TIME=$(date +%H:%M:%S)
 eltex-pg2-v21@eltex-2026-autumn:~$ echo "Время = $TIME"
-Время = 12:54:02
+Время = 19:20:58
 eltex-pg2-v21@eltex-2026-autumn:~$ DATE_TIME="$DATE $TIME"
 eltex-pg2-v21@eltex-2026-autumn:~$ echo "Дата и Время = $DATE_TIME"
-Дата и Время = 2026-10-09 12:54:02
-eltex-pg2-v21@eltex-2026-autumn:~$ ls -d /bin/*[0-9]* /sbin/*[0-9]*
-/bin/addr2line
-/bin/b2sum
-/bin/base32
-/bin/base64
-/bin/bunzip2
-/bin/bzip2
-/bin/bzip2recover
-/bin/c89
-/bin/c89-gcc
-/bin/c99
-/bin/c99-gcc
-/bin/cpan5.36-x86_64-linux-gnu
-/bin/cpp-12
-/bin/diff3
-/bin/enc2xs
-/bin/gcc-12
-/bin/gcc-ar-12
-/bin/gcc-nm-12
-/bin/gcc-ranlib-12
-/bin/gcov-12
-/bin/gcov-dump-12
-/bin/gcov-tool-12
-/bin/grub-menulst2cfg
-/bin/grub-mkpasswd-pbkdf2
-/bin/grub-syslinux2cfg
-/bin/h2ph
-/bin/h2xs
-/bin/i386
-/bin/linux32
-/bin/linux64
-/bin/lto-dump-12
-/bin/md5sum
-/bin/md5sum.textutils
-/bin/pdb3
-/bin/pdb3.11
-/bin/perl5.36.0
-/bin/perl5.36-x86_64-linux-gnu
-/bin/ping4
-/bin/ping6
-/bin/pl2pm
-/bin/pod2html
-/bin/pod2man
-/bin/pod2text
-/bin/pod2usage
-/bin/py3clean
-/bin/py3compile
-/bin/py3versions
-/bin/pydoc3
-/bin/pydoc3.11
-/bin/pygettext3
-/bin/pygettext3.11
-/bin/python3
-/bin/python3.11
-/bin/sha1sum
-/bin/sha224sum
-/bin/sha256sum
-/bin/sha384sum
-/bin/sha512sum
-/bin/ssh-argv0
-/bin/systemd-id128
-/bin/traceroute6
-/bin/traceroute6.db
-/bin/x86_64
-/bin/x86_64-linux-gnu-addr2line
-/bin/x86_64-linux-gnu-ar
-/bin/x86_64-linux-gnu-as
-/bin/x86_64-linux-gnu-c++filt
-/bin/x86_64-linux-gnu-cpp
-/bin/x86_64-linux-gnu-cpp-12
-/bin/x86_64-linux-gnu-dwp
-/bin/x86_64-linux-gnu-elfedit
-/bin/x86_64-linux-gnu-gcc
-/bin/x86_64-linux-gnu-gcc-12
-/bin/x86_64-linux-gnu-gcc-ar
-/bin/x86_64-linux-gnu-gcc-ar-12
-/bin/x86_64-linux-gnu-gcc-nm
-/bin/x86_64-linux-gnu-gcc-nm-12
-/bin/x86_64-linux-gnu-gcc-ranlib
-/bin/x86_64-linux-gnu-gcc-ranlib-12
-/bin/x86_64-linux-gnu-gcov
-/bin/x86_64-linux-gnu-gcov-12
-/bin/x86_64-linux-gnu-gcov-dump
-/bin/x86_64-linux-gnu-gcov-dump-12
-/bin/x86_64-linux-gnu-gcov-tool
-/bin/x86_64-linux-gnu-gcov-tool-12
-/bin/x86_64-linux-gnu-gold
-/bin/x86_64-linux-gnu-gp-archive
-/bin/x86_64-linux-gnu-gp-collect-app
-/bin/x86_64-linux-gnu-gp-display-html
-/bin/x86_64-linux-gnu-gp-display-src
-/bin/x86_64-linux-gnu-gp-display-text
-/bin/x86_64-linux-gnu-gprof
-/bin/x86_64-linux-gnu-gprofng
-/bin/x86_64-linux-gnu-ld
-/bin/x86_64-linux-gnu-ld.bfd
-/bin/x86_64-linux-gnu-ld.gold
-/bin/x86_64-linux-gnu-lto-dump
-/bin/x86_64-linux-gnu-lto-dump-12
-/bin/x86_64-linux-gnu-nm
-/bin/x86_64-linux-gnu-objcopy
-/bin/x86_64-linux-gnu-objdump
-/bin/x86_64-linux-gnu-ranlib
-/bin/x86_64-linux-gnu-readelf
-/bin/x86_64-linux-gnu-size
-/bin/x86_64-linux-gnu-strings
-/bin/x86_64-linux-gnu-strip
-/sbin/dumpe2fs
-/sbin/e2freefrag
-/sbin/e2fsck
-/sbin/e2image
-/sbin/e2label
-/sbin/e2mmpstatus
-/sbin/e2scrub
-/sbin/e2scrub_all
-/sbin/e2undo
-/sbin/e4crypt
-/sbin/e4defrag
-/sbin/fsck.ext2
-/sbin/fsck.ext3
-/sbin/fsck.ext4
-/sbin/killall5
-/sbin/mke2fs
-/sbin/mkfs.ext2
-/sbin/mkfs.ext3
-/sbin/mkfs.ext4
-/sbin/resize2fs
-/sbin/tune2fs
-/sbin/update-grub2
+Дата и Время = 2026-10-09 19:20:58
+eltex-pg2-v21@eltex-2026-autumn:~$ ls /bin /sbin | grep '[0-9]'
+addr2line
+b2sum
+base32
+base64
+bunzip2
+bzip2
+bzip2recover
+c89
+c89-gcc
+c99
+c99-gcc
+cpan5.36-x86_64-linux-gnu
+cpp-12
+diff3
+enc2xs
+gcc-12
+gcc-ar-12
+gcc-nm-12
+gcc-ranlib-12
+gcov-12
+gcov-dump-12
+gcov-tool-12
+grub-menulst2cfg
+grub-mkpasswd-pbkdf2
+grub-syslinux2cfg
+h2ph
+h2xs
+i386
+linux32
+linux64
+lto-dump-12
+md5sum
+md5sum.textutils
+pdb3
+pdb3.11
+perl5.36.0
+perl5.36-x86_64-linux-gnu
+ping4
+ping6
+pl2pm
+pod2html
+pod2man
+pod2text
+pod2usage
+py3clean
+py3compile
+py3versions
+pydoc3
+pydoc3.11
+pygettext3
+pygettext3.11
+python3
+python3.11
+sha1sum
+sha224sum
+sha256sum
+sha384sum
+sha512sum
+ssh-argv0
+systemd-id128
+traceroute6
+traceroute6.db
+x86_64
+x86_64-linux-gnu-addr2line
+x86_64-linux-gnu-ar
+x86_64-linux-gnu-as
+x86_64-linux-gnu-c++filt
+x86_64-linux-gnu-cpp
+x86_64-linux-gnu-cpp-12
+x86_64-linux-gnu-dwp
+x86_64-linux-gnu-elfedit
+x86_64-linux-gnu-gcc
+x86_64-linux-gnu-gcc-12
+x86_64-linux-gnu-gcc-ar
+x86_64-linux-gnu-gcc-ar-12
+x86_64-linux-gnu-gcc-nm
+x86_64-linux-gnu-gcc-nm-12
+x86_64-linux-gnu-gcc-ranlib
+x86_64-linux-gnu-gcc-ranlib-12
+x86_64-linux-gnu-gcov
+x86_64-linux-gnu-gcov-12
+x86_64-linux-gnu-gcov-dump
+x86_64-linux-gnu-gcov-dump-12
+x86_64-linux-gnu-gcov-tool
+x86_64-linux-gnu-gcov-tool-12
+x86_64-linux-gnu-gold
+x86_64-linux-gnu-gp-archive
+x86_64-linux-gnu-gp-collect-app
+x86_64-linux-gnu-gp-display-html
+x86_64-linux-gnu-gp-display-src
+x86_64-linux-gnu-gp-display-text
+x86_64-linux-gnu-gprof
+x86_64-linux-gnu-gprofng
+x86_64-linux-gnu-ld
+x86_64-linux-gnu-ld.bfd
+x86_64-linux-gnu-ld.gold
+x86_64-linux-gnu-lto-dump
+x86_64-linux-gnu-lto-dump-12
+x86_64-linux-gnu-nm
+x86_64-linux-gnu-objcopy
+x86_64-linux-gnu-objdump
+x86_64-linux-gnu-ranlib
+x86_64-linux-gnu-readelf
+x86_64-linux-gnu-size
+x86_64-linux-gnu-strings
+x86_64-linux-gnu-strip
+dumpe2fs
+e2freefrag
+e2fsck
+e2image
+e2label
+e2mmpstatus
+e2scrub
+e2scrub_all
+e2undo
+e4crypt
+e4defrag
+fsck.ext2
+fsck.ext3
+fsck.ext4
+killall5
+mke2fs
+mkfs.ext2
+mkfs.ext3
+mkfs.ext4
+resize2fs
+tune2fs
+update-grub2
 eltex-pg2-v21@eltex-2026-autumn:~$ PS1="\u@\h-$(date +%H:%M)> "
-eltex-pg2-v21@eltex-2026-autumn-12:55> export PS1
-eltex-pg2-v21@eltex-2026-autumn-12:55> bash --norc
-eltex-pg2-v21@eltex-2026-autumn-12:55> mkdir "$(date +%Y)"-{01..12}
-eltex-pg2-v21@eltex-2026-autumn-12:55> ls
-2026-01  2026-03  2026-05  2026-07  2026-09  2026-11  eltex-pg2-v21_part2.log  razdel2	    report_part1.txt
-2026-02  2026-04  2026-06  2026-08  2026-10  2026-12  eltex-pg2-v21_part.log   razdel_2.sh  work
-eltex-pg2-v21@eltex-2026-autumn-12:55> exit
+eltex-pg2-v21@eltex-2026-autumn-19:25> export PS1
+eltex-pg2-v21@eltex-2026-autumn-19:25> bash --norc
+eltex-pg2-v21@eltex-2026-autumn-19:25> mkdir -p "$(date +%Y)"-{01..12}
+eltex-pg2-v21@eltex-2026-autumn-19:25> ls -1l
+total 88
+drwxr-xr-x 2 eltex-pg2-v21 eltex-pg2-v21  4096 Oct  9 12:38 2026-01
+drwxr-xr-x 2 eltex-pg2-v21 eltex-pg2-v21  4096 Oct  9 12:38 2026-02
+drwxr-xr-x 2 eltex-pg2-v21 eltex-pg2-v21  4096 Oct  9 12:38 2026-03
+drwxr-xr-x 2 eltex-pg2-v21 eltex-pg2-v21  4096 Oct  9 12:38 2026-04
+drwxr-xr-x 2 eltex-pg2-v21 eltex-pg2-v21  4096 Oct  9 12:38 2026-05
+drwxr-xr-x 2 eltex-pg2-v21 eltex-pg2-v21  4096 Oct  9 12:38 2026-06
+drwxr-xr-x 2 eltex-pg2-v21 eltex-pg2-v21  4096 Oct  9 12:38 2026-07
+drwxr-xr-x 2 eltex-pg2-v21 eltex-pg2-v21  4096 Oct  9 12:38 2026-08
+drwxr-xr-x 2 eltex-pg2-v21 eltex-pg2-v21  4096 Oct  9 12:38 2026-09
+drwxr-xr-x 2 eltex-pg2-v21 eltex-pg2-v21  4096 Oct  9 12:38 2026-10
+drwxr-xr-x 2 eltex-pg2-v21 eltex-pg2-v21  4096 Oct  9 12:38 2026-11
+drwxr-xr-x 2 eltex-pg2-v21 eltex-pg2-v21  4096 Oct  9 12:38 2026-12
+-rw-r--r-- 1 eltex-pg2-v21 eltex-pg2-v21 14007 Oct  9 12:39 eltex-pg2-v21_part2.log
+-rw-r--r-- 1 eltex-pg2-v21 eltex-pg2-v21  4096 Oct  9 19:25 eltex-pg2-v21_part.log
+drwxr-xr-x 2 eltex-pg2-v21 eltex-pg2-v21  4096 Oct  9 12:22 razdel2
+-rwxr--r-- 1 eltex-pg2-v21 eltex-pg2-v21  4487 Oct  9 12:03 razdel_2.sh
+-r--r--r-- 1 eltex-pg2-v21 eltex-pg2-v21   105 Oct  8 02:37 report_part1.txt
+drwxr-xr-x 2 eltex-pg2-v21 eltex-pg2-v21  4096 Oct  9 08:50 work
+eltex-pg2-v21@eltex-2026-autumn-19:25> exit
 exit
-eltex-pg2-v21@eltex-2026-autumn-12:55> exit
+eltex-pg2-v21@eltex-2026-autumn-19:25> exit
 exit
 
-Script done on 2026-10-09 12:56:38+07:00 [COMMAND_EXIT_CODE="0"]
+Script done on 2026-10-09 19:27:35+07:00 [COMMAND_EXIT_CODE="0"]
