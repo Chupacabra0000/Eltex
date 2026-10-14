@@ -1,0 +1,219 @@
+Script started on 2026-10-14 12:46:42+00:00 [TERM="dumb" TTY="/dev/pts/1" COLUMNS="207" LINES="64"]
+root@eltex-practice2-pg2-v21:~# ls
+ls           lsattr       lsb_release  lshw         lsipc        lslogins     lsmod        lsns         lspci        lspower      lst          lsx          
+ls1          lsblk        lscpu        lsinitramfs  lslocks      lsmem        lsmount      lsof         lspgpot      lss          lsusb        
+root@eltex-practice2-pg2-v21:~# echo $HIST
+$HISTCMD       $HISTCONTROL   $HISTFILE      $HISTFILESIZE  $HISTSIZE      
+root@eltex-practice2-pg2-v21:~# echo "$HISTFILESIZE"
+2000
+root@eltex-practice2-pg2-v21:~# echo "$HISTSIZE"
+1000
+root@eltex-practice2-pg2-v21:~# ls -d ~/.*
+/root/.bash_history
+/root/.bashrc
+/root/.cache
+/root/.local
+/root/.profile
+/root/.ssh
+/root/.viminfo
+root@eltex-practice2-pg2-v21:~# history 5
+   15  c
+   16  echo "$HISTFILESIZE"
+   17  echo "$HISTSIZE"
+   18  ls -d ~/.*
+   19  history 5
+root@eltex-practice2-pg2-v21:~# HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S "
+root@eltex-practice2-pg2-v21:~# history 5
+   19  2026-10-14 12:50:35 history 5
+   20  2026-10-14 12:50:45 HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S"
+   21  2026-10-14 12:50:49 history 5
+   22  2026-10-14 12:51:03 HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S "
+   23  2026-10-14 12:51:06 history 5
+root@eltex-practice2-pg2-v21:~# 
+root@eltex-practice2-pg2-v21:~# date
+Wed Oct 14 12:52:14 PM UTC 2026
+root@eltex-practice2-pg2-v21:~# history 5
+   21  2026-10-14 12:50:49 history 5
+   22  2026-10-14 12:51:03 HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S "
+   23  2026-10-14 12:51:06 history 5
+   24  2026-10-14 12:52:14 date
+   25  2026-10-14 12:52:25 history 5
+root@eltex-practice2-pg2-v21:~# tail -n 5 .bashprofile_history 
+ls ~/
+la
+nano .bashrc 
+source .bashrc 
+c
+root@eltex-practice2-pg2-v21:~# PROMPT_COMMAND="history -a"
+root@eltex-practice2-pg2-v21:~# whoami
+root
+root@eltex-practice2-pg2-v21:~# history 5
+   25  2026-10-14 12:52:25 history 5
+   26  2026-10-14 12:53:10 tail -n 5 .bash_history 
+   27  2026-10-14 12:53:40 PROMPT_COMMAND="history -a"
+   28  2026-10-14 12:53:53 whoami
+   29  2026-10-14 12:53:59 history 5
+root@eltex-practice2-pg2-v21:~# tail -n 5.bash_history 
+PROMPT_COMMAND="history -a"
+#1791982433
+whoami
+#1791982439
+history 5
+root@eltex-practice2-pg2-v21:~# DATE=$(date +%Y-%m-%d)
+root@eltex-practice2-pg2-v21:~# echo $DATE
+2026-10-14
+root@eltex-practice2-pg2-v21:~# TIME=$(date +%H:%M:%S )
+root@eltex-practice2-pg2-v21:~# echo $TIME
+12:56:32
+root@eltex-practice2-pg2-v21:~# DATE_TIME="$DATE $TIME"
+root@eltex-practice2-pg2-v21:~# echo "$DATE_TIME"
+2026-10-14 12:56:32
+root@eltex-practice2-pg2-v21:~# ls -d /bin/*[0-9]* /sbin/*[0-9]*
+/bin/automat-visualize3
+/bin/b2sum
+/bin/base32
+/bin/base64
+/bin/cftp3
+/bin/ckeygen3
+/bin/col1
+/bin/col2
+/bin/col3
+/bin/col4
+/bin/col5
+/bin/col6
+/bin/col7
+/bin/col8
+/bin/col9
+/bin/conch3
+/bin/cpan5.38-x86_64-linux-gnu
+/bin/diff3
+/bin/ec2metadata
+/bin/enc2xs
+/bin/fusermount3
+/bin/grub-menulst2cfg
+/bin/grub-mkpasswd-pbkdf2
+/bin/grub-syslinux2cfg
+/bin/h2ph
+/bin/h2xs
+/bin/i386
+/bin/linux32
+/bin/linux64
+/bin/lowntfs-3g
+/bin/mailmail3
+/bin/md5sum
+/bin/md5sum.textutils
+/bin/ntfs-3g
+/bin/ntfs-3g.probe
+/bin/pdb3
+/bin/pdb3.12
+/bin/perl5.38.2
+/bin/perl5.38-x86_64-linux-gnu
+/bin/ping4
+/bin/ping6
+/bin/pl2pm
+/bin/pod2html
+/bin/pod2man
+/bin/pod2text
+/bin/pod2usage
+/bin/pstree.x11
+/bin/py3clean
+/bin/py3compile
+/bin/py3versions
+/bin/pybabel-python3
+/bin/pydoc3
+/bin/pydoc3.12
+/bin/pygettext3
+/bin/pygettext3.12
+/bin/pyhtmlizer3
+/bin/python3
+/bin/python3.12
+/bin/sg_map26
+/bin/sha1sum
+/bin/sha224sum
+/bin/sha256sum
+/bin/sha384sum
+/bin/sha512sum
+/bin/ssh-argv0
+/bin/systemd-id128
+/bin/tclsh8.6
+/bin/tkconch3
+/bin/trial3
+/bin/twist3
+/bin/twistd3
+/bin/x86_64
+/bin/x86_energy_perf_policy
+/sbin/dumpe2fs
+/sbin/e2freefrag
+/sbin/e2fsck
+/sbin/e2image
+/sbin/e2label
+/sbin/e2mmpstatus
+/sbin/e2scrub
+/sbin/e2scrub_all
+/sbin/e2undo
+/sbin/e4crypt
+/sbin/e4defrag
+/sbin/ext4dist-bpfcc
+/sbin/ext4slower-bpfcc
+/sbin/fsck.ext2
+/sbin/fsck.ext3
+/sbin/fsck.ext4
+/sbin/ip6tables
+/sbin/ip6tables-apply
+/sbin/ip6tables-legacy
+/sbin/ip6tables-legacy-restore
+/sbin/ip6tables-legacy-save
+/sbin/ip6tables-nft
+/sbin/ip6tables-nft-restore
+/sbin/ip6tables-nft-save
+/sbin/ip6tables-restore
+/sbin/ip6tables-restore-translate
+/sbin/ip6tables-save
+/sbin/ip6tables-translate
+/sbin/killall5
+/sbin/mke2fs
+/sbin/mkfs.ext2
+/sbin/mkfs.ext3
+/sbin/mkfs.ext4
+/sbin/mount.fuse3
+/sbin/mount.lowntfs-3g
+/sbin/mount.ntfs-3g
+/sbin/resize2fs
+/sbin/tune2fs
+/sbin/umount.udisks2
+/sbin/update-grub2
+root@eltex-practice2-pg2-v21:~# PS1="\u@\h-$(date +%H:%M)> "
+root@eltex-practice2-pg2-v21-12:58> export PS1
+root@eltex-practice2-pg2-v21-12:58> bash --norc
+root@eltex-practice2-pg2-v21-12:58> exit
+exit
+root@eltex-practice2-pg2-v21-12:58> mkdir -p ~/"$(date +%Y)"-{01..12}
+mkdir: created directory '/root/2026-01'
+mkdir: created directory '/root/2026-02'
+mkdir: created directory '/root/2026-03'
+mkdir: created directory '/root/2026-04'
+mkdir: created directory '/root/2026-05'
+mkdir: created directory '/root/2026-06'
+mkdir: created directory '/root/2026-07'
+mkdir: created directory '/root/2026-08'
+mkdir: created directory '/root/2026-09'
+mkdir: created directory '/root/2026-10'
+mkdir: created directory '/root/2026-11'
+mkdir: created directory '/root/2026-12'
+root@eltex-practice2-pg2-v21-12:58> ls -d ~/"$(date +%Y)"-*
+/root/2026-01
+/root/2026-02
+/root/2026-03
+/root/2026-04
+/root/2026-05
+/root/2026-06
+/root/2026-07
+/root/2026-08
+/root/2026-09
+/root/2026-10
+/root/2026-11
+/root/2026-12
+root@eltex-practice2-pg2-v21-12:58> exit
+exit
+
+Script done on 2026-10-14 12:59:54+00:00 [COMMAND_EXIT_CODE="0"]
