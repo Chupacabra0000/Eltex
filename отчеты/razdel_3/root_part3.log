@@ -1,0 +1,151 @@
+$: cd ~
+
+$: touch "${USER}_part3.log"
+
+$: mkdir -p D1/D2/D3
+
+$: touch D1/D2/file.txt
+
+$: echo "Hello from file.txt" > D1/D2/file.txt
+
+$: cd D1/D2/D3
+
+$: ln -s ../file.txt symbolic_link
+$: ln ../file.txt hard_link
+
+$: ls -li ../file.txt symbolic_link hard_link
+817772 -rw-r--r-- 2 root root 20 Oct 14 21:32 ../file.txt
+817772 -rw-r--r-- 2 root root 20 Oct 14 21:32 hard_link
+817774 lrwxrwxrwx 1 root root 11 Oct 14 21:32 symbolic_link -> ../file.txt
+
+$: cd ~
+
+$: mv D1/D2/file.txt D1/
+
+$: cat D1/D2/D3/hard_link
+Hello from file.txt
+
+$: cat D1/D2/D3/symbolic_link
+cat: D1/D2/D3/symbolic_link: No such file or directory
+
+$: rm -rf D1/D2
+
+$: find / -type f -size +20M 2>/dev/null \
+ > "${USER}_part3_gt20M.log"
+
+$: cat "${USER}_part3_gt20M.log"
+/swap.img
+/root/Eltex/.git/objects/pack/pack-85187d1f522a7f6cfdbc9018d1b2f48e51340580.pack
+/var/cache/apt/srcpkgcache.bin
+/var/cache/apt/archives/linux-firmware_20240318.git3b128b60-0ubuntu2.26_amd64.deb
+/var/cache/apt/archives/snapd_2.76+ubuntu24.04.1_amd64.deb
+/var/cache/apt/archives/linux-modules-extra-6.8.0-147-generic_6.8.0-147.147_amd64.deb
+/var/cache/apt/archives/linux-modules-6.8.0-147-generic_6.8.0-147.147_amd64.deb
+/var/cache/apt/pkgcache.bin
+/var/lib/apt/lists/ru.archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages
+/var/lib/apt/lists/ru.archive.ubuntu.com_ubuntu_dists_noble_universe_i18n_Translation-en
+/boot/initrd.img-6.8.0-55-generic
+/usr/lib/llvm-18/lib/libLLVM.so.1
+/usr/lib/llvm-18/lib/libclang-cpp.so.18.1
+/usr/lib/x86_64-linux-gnu/libicudata.so.74.2
+/usr/lib/x86_64-linux-gnu/libclang-18.so.18
+/usr/lib/firmware/nvidia/ga102/gsp/gsp-535.113.01.bin.zst
+/usr/lib/snapd/snapd
+/proc/kcore
+
+$: while read file; do
+    du -h "$file"
+done < "${USER}_part3_gt20M.log"
+3.2G    /swap.img
+143M    /root/Eltex/.git/objects/pack/pack-85187d1f522a7f6cfdbc9018d1b2f48e51340580.pack
+56M     /var/cache/apt/srcpkgcache.bin
+605M    /var/cache/apt/archives/linux-firmware_20240318.git3b128b60-0ubuntu2.26_amd64.deb
+35M     /var/cache/apt/archives/snapd_2.76+ubuntu24.04.1_amd64.deb
+109M    /var/cache/apt/archives/linux-modules-extra-6.8.0-147-generic_6.8.0-147.147_amd64.deb
+38M     /var/cache/apt/archives/linux-modules-6.8.0-147-generic_6.8.0-147.147_amd64.deb
+56M     /var/cache/apt/pkgcache.bin
+70M     /var/lib/apt/lists/ru.archive.ubuntu.com_ubuntu_dists_noble_universe_binary-amd64_Packages
+31M     /var/lib/apt/lists/ru.archive.ubuntu.com_ubuntu_dists_noble_universe_i18n_Translation-en
+66M     /boot/initrd.img-6.8.0-55-generic
+118M    /usr/lib/llvm-18/lib/libLLVM.so.1
+62M     /usr/lib/llvm-18/lib/libclang-cpp.so.18.1
+30M     /usr/lib/x86_64-linux-gnu/libicudata.so.74.2
+33M     /usr/lib/x86_64-linux-gnu/libclang-18.so.18
+26M     /usr/lib/firmware/nvidia/ga102/gsp/gsp-535.113.01.bin.zst
+24M     /usr/lib/snapd/snapd
+0       /proc/kcore
+
+$: find ~ -type f -mtime -1
+/root/root_part3.log
+/root/root_part3_gt20M.log
+/root/.cache/motd.legal-displayed
+/root/Eltex/.DS_Store
+/root/Eltex/exercise2.sh
+/root/Eltex/отчеты/root_part.log
+/root/Eltex/отчеты/Шахид_Ш_Раздел_1_очтет.pdf
+/root/Eltex/Раздел1.docx
+/root/Eltex/.gitignore
+/root/Eltex/eltex-pg2-v21_part.log
+/root/Eltex/.git/description
+/root/Eltex/.git/info/exclude
+/root/Eltex/.git/logs/HEAD
+/root/Eltex/.git/logs/refs/remotes/origin/main
+/root/Eltex/.git/logs/refs/remotes/origin/HEAD
+/root/Eltex/.git/logs/refs/heads/main
+/root/Eltex/.git/objects/5b/78be81f2e0a55c974cb5752b2f4b23d6f0a309
+/root/Eltex/.git/objects/pack/pack-85187d1f522a7f6cfdbc9018d1b2f48e51340580.rev
+/root/Eltex/.git/objects/pack/pack-85187d1f522a7f6cfdbc9018d1b2f48e51340580.pack
+/root/Eltex/.git/objects/pack/pack-85187d1f522a7f6cfdbc9018d1b2f48e51340580.idx
+/root/Eltex/.git/objects/b6/f800934ffdd3d5fc2c00f380e5d82bb56b2231
+/root/Eltex/.git/objects/7a/60329e8247063e3929e706ef6bfd33b52afc06
+/root/Eltex/.git/objects/2e/85de100b74df945c388f8205494c399a85090e
+/root/Eltex/.git/objects/c7/55d107d6178e9b8cb435c2a2f36d7fd3afc02f
+/root/Eltex/.git/objects/2d/28994a5b1e2ea4e54311afd8e68f6cb27020e8
+/root/Eltex/.git/objects/42/d233f3e5deac59ee8ed9175ad7bd38cd559d22
+/root/Eltex/.git/objects/8e/5a31176383b0091858f858f3dfc908fa25f984
+/root/Eltex/.git/objects/6f/06f846f4df84aebebfc041ac68a0f3154fc847
+/root/Eltex/.git/HEAD
+/root/Eltex/.git/hooks/applypatch-msg.sample
+/root/Eltex/.git/hooks/pre-commit.sample
+/root/Eltex/.git/hooks/update.sample
+/root/Eltex/.git/hooks/sendemail-validate.sample
+/root/Eltex/.git/hooks/pre-applypatch.sample
+/root/Eltex/.git/hooks/pre-receive.sample
+/root/Eltex/.git/hooks/commit-msg.sample
+/root/Eltex/.git/hooks/fsmonitor-watchman.sample
+/root/Eltex/.git/hooks/pre-merge-commit.sample
+/root/Eltex/.git/hooks/prepare-commit-msg.sample
+/root/Eltex/.git/hooks/post-update.sample
+/root/Eltex/.git/hooks/pre-rebase.sample
+/root/Eltex/.git/hooks/pre-push.sample
+/root/Eltex/.git/hooks/push-to-checkout.sample
+/root/Eltex/.git/COMMIT_EDITMSG
+/root/Eltex/.git/ORIG_HEAD
+/root/Eltex/.git/FETCH_HEAD
+/root/Eltex/.git/index
+/root/Eltex/.git/refs/remotes/origin/main
+/root/Eltex/.git/refs/remotes/origin/HEAD
+/root/Eltex/.git/refs/heads/main
+/root/Eltex/.git/config
+/root/Eltex/.git/packed-refs
+/root/root_part.log
+/root/.gitconfig
+/root/D1/file.txt
+/root/.lesshst
+/root/.bashrc
+/root/.bash_history
+/root/.ssh/known_hosts.old
+/root/.ssh/known_hosts
+/root/.ssh/id_ed25519.pub
+/root/.ssh/id_ed25519
+
+$: which find
+/usr/bin/find
+
+$: file "$(which find)"
+file /usr/bin/find
+
+$: file /boot/initrd.img*
+/boot/initrd.img:                  symbolic link to initrd.img-6.8.0-55-generic
+/boot/initrd.img-6.8.0-55-generic: ASCII cpio archive (SVR4 with no CRC)
+/boot/initrd.img.old:              symbolic link to initrd.img-6.8.0-55-generic
