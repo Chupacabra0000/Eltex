@@ -1,0 +1,351 @@
+#На сервере 1:
+eltex-pg2-v21@eltex-2026-autumn:~$ ssh-keygen -t ed25519
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/eltex-pg2-v21/.ssh/id_ed25519): 
+/home/eltex-pg2-v21/.ssh/id_ed25519 already exists.
+Overwrite (y/n)? n
+
+eltex-pg2-v21@eltex-2026-autumn:~$ ls -l ~/.ssh/*.pub
+-rw-r--r-- 1 eltex-pg2-v21 eltex-pg2-v21 113 Oct 19 04:09 /home/eltex-pg2-v21/.ssh/id_ed25519.pub
+
+eltex-pg2-v21@eltex-2026-autumn:~$ ssh-copy-id -i ~/.ssh/id_ed25519.pub root@172.16.9.221
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/eltex-pg2-v21/.ssh/id_ed25519.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+		(if you think this is a mistake, you may want to use -f option)
+
+eltex-pg2-v21@eltex-2026-autumn:~$ ssh root@172.16.9.221
+Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-147-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Mon Oct 19 10:04:20 AM UTC 2026
+
+  System load:  0.24               Processes:              112
+  Usage of /:   42.4% of 14.66GB   Users logged in:        0
+  Memory usage: 5%                 IPv4 address for ens18: 172.16.9.221
+  Swap usage:   0%
+
+ * Canonical Workshop gives developers fast, composable, reproducible, and
+   secure developer environments that are perfect for agentic workflows.
+
+   https://ubuntu.com/workshop
+
+Expanded Security Maintenance for Applications is not enabled.
+
+108 updates can be applied immediately.
+1 of these updates is a standard security update.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+New release '26.04.1 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Mon Oct 19 09:47:02 2026 from 172.16.8.4
+
+eltex-pg2-v21@eltex-2026-autumn:~$ cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFjNTH9P1TMEynZ/7NkPmylklTCfqO4sEvJGzQtoOEt4 eltex-pg2-v21@eltex-2026-autumn
+
+eltex-pg2-v21@eltex-2026-autumn:~$ ls -l ~/.ssh/id_ed25519.pub
+-rw-r--r-- 1 eltex-pg2-v21 eltex-pg2-v21 113 Oct 19 04:09 /home/eltex-pg2-v21/.ssh/id_ed25519.pub
+
+
+
+#На сервере 2:
+root@eltex-practice2-pg2-v21:~# export MYUSER="eltex-pg2-v21"
+root@eltex-practice2-pg2-v21:~# touch "practice2_${MYUSER}_part1.log"
+root@eltex-practice2-pg2-v21:~# cat ~/.ssh/authorized_keys
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFjNTH9P1TMEynZ/7NkPmylklTCfqO4sEvJGzQtoOEt4 eltex-pg2-v21@eltex-2026-autumn
+
+root@eltex-practice2-pg2-v21:~# ls -ld ~/.ssh
+drwx------ 2 root root 4096 Oct 14 13:34 /root/.ssh
+
+root@eltex-practice2-pg2-v21:~# ls -l ~/.ssh/authorized_keys
+-rw------- 1 root root 113 Oct 18 21:16 /root/.ssh/authorized_keys
+
+root@eltex-practice2-pg2-v21:~# useradd -m -s /bin/bash user1
+root@eltex-practice2-pg2-v21:~# passwd user1
+New password: 
+Retype new password: 
+passwd: password updated successfully
+
+root@eltex-practice2-pg2-v21:~# useradd -m -s /bin/bash user2
+root@eltex-practice2-pg2-v21:~# passwd user2
+New password: 
+Retype new password: 
+passwd: password updated successfully
+
+root@eltex-practice2-pg2-v21:~# useradd -m -s /bin/bash user3
+root@eltex-practice2-pg2-v21:~# passwd user3
+New password: 
+Retype new password: 
+passwd: password updated successfully
+
+root@eltex-practice2-pg2-v21:~# id user1
+uid=1001(user1) gid=1001(user1) groups=1001(user1)
+
+root@eltex-practice2-pg2-v21:~# id user2
+uid=1002(user2) gid=1002(user2) groups=1002(user2)
+
+root@eltex-practice2-pg2-v21:~# id user3
+uid=1003(user3) gid=1003(user3) groups=1003(user3)
+
+root@eltex-practice2-pg2-v21:~# getent passwd user1
+user1:x:1001:1001::/home/user1:/bin/bash
+
+root@eltex-practice2-pg2-v21:~# getent passwd user2
+user2:x:1002:1002::/home/user2:/bin/bash
+
+root@eltex-practice2-pg2-v21:~# getent passwd user3
+user3:x:1003:1003::/home/user3:/bin/bash
+
+root@eltex-practice2-pg2-v21:~# usermod -s /usr/sbin/nologin user3
+root@eltex-practice2-pg2-v21:~# getent passwd user3
+user3:x:1003:1003::/home/user3:/usr/sbin/nologin
+
+root@eltex-practice2-pg2-v21:~# su - user3
+This account is currently not available.
+
+root@eltex-practice2-pg2-v21:~# su -s /bin/bash user3
+user3@eltex-practice2-pg2-v21:/root$ exit
+exit
+
+root@eltex-practice2-pg2-v21:~# groupadd practicegroup
+root@eltex-practice2-pg2-v21:~# usermod -aG practicegroup user1
+root@eltex-practice2-pg2-v21:~# usermod -aG practicegroup user2
+root@eltex-practice2-pg2-v21:~# usermod -aG practicegroup user3
+
+root@eltex-practice2-pg2-v21:~# id user1
+uid=1001(user1) gid=1001(user1) groups=1001(user1),1004(practicegroup)
+
+root@eltex-practice2-pg2-v21:~# id user2
+uid=1002(user2) gid=1002(user2) groups=1002(user2),1004(practicegroup)
+
+root@eltex-practice2-pg2-v21:~# id user3
+uid=1003(user3) gid=1003(user3) groups=1003(user3),1004(practicegroup)
+
+root@eltex-practice2-pg2-v21:~# getent group practicegroup
+practicegroup:x:1004:user1,user2,user3
+
+root@eltex-practice2-pg2-v21:~# mkdir -p /opt/share
+mkdir: created directory '/opt/share'
+
+root@eltex-practice2-pg2-v21:~# chown root:practicegroup /opt/share
+root@eltex-practice2-pg2-v21:~# chmod u=rwx,g=rws,o= /opt/share
+root@eltex-practice2-pg2-v21:~# ls -ld /opt/share
+drwxrwS--- 2 root practicegroup 4096 Oct 19 10:31 /opt/share
+
+root@eltex-practice2-pg2-v21:~# echo 'umask 027' >> /home/user1/.bashrc
+root@eltex-practice2-pg2-v21:~# su - user1
+user1@eltex-practice2-pg2-v21:~$ umask
+0027
+user1@eltex-practice2-pg2-v21:~$ exit
+logout
+
+root@eltex-practice2-pg2-v21:~# chmod 2770 /opt/share
+root@eltex-practice2-pg2-v21:~# su - user1 -c 'echo user1 > /opt/share/user1.txt'
+root@eltex-practice2-pg2-v21:~# su - user2 -c 'echo user2 > /opt/share/user2.txt'
+root@eltex-practice2-pg2-v21:~# su - user3 -c 'echo user3 > /opt/share/user3.txt'
+This account is currently not available.
+
+root@eltex-practice2-pg2-v21:~# su - user1 -c 'rm /opt/share/user2.txt'
+
+root@eltex-practice2-pg2-v21:~# chmod 3770 /opt/share
+root@eltex-practice2-pg2-v21:~# su - user1 -c 'echo user1 > /opt/share/user1.txt'
+root@eltex-practice2-pg2-v21:~# su - user2 -c 'echo user2 > /opt/share/user2.txt'
+root@eltex-practice2-pg2-v21:~# su - user3 -c 'echo user3 > /opt/share/user3.txt'
+This account is currently not available.
+
+root@eltex-practice2-pg2-v21:~# su - user1 -c 'rm /opt/share/user2.txt'
+rm: cannot remove '/opt/share/user2.txt': Operation not permitted
+
+root@eltex-practice2-pg2-v21:~# ls -ld /opt/share
+drwxrws--T 2 root practicegroup 4096 Oct 19 10:40 /opt/share
+
+root@eltex-practice2-pg2-v21:~# command -v sudo
+/usr/bin/sudo
+
+root@eltex-practice2-pg2-v21:~# visudo -f /etc/sudoers.d/user1-dmesg
+root@eltex-practice2-pg2-v21:~# cat /etc/sudoers.d/user1-dmesg
+user1 ALL=(root) /usr/bin/dmesg
+
+user1@eltex-practice2-pg2-v21:~$ sudo -l
+Matching Defaults entries for user1 on eltex-practice2-pg2-v21:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin, use_pty
+
+User user1 may run the following commands on eltex-practice2-pg2-v21:
+    (root) /usr/bin/dmesg
+root@eltex-practice2-pg2-v21:~# su - user1
+user1@eltex-practice2-pg2-v21:~$ sudo dmesg
+[    0.000000] Linux version 6.8.0-147-generic (buildd@lcy02-amd64-081) (x86_64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #147-Ubuntu SMP PREEMPT_DYNAMIC Thu Sep 24 11:33:16 UTC 2026 (Ubuntu 6.8.0-147.147-generic 6.8.12)
+[    0.000000] Command line: BOOT_IMAGE=/vmlinuz-6.8.0-147-generic root=/dev/mapper/ubuntu--vg-ubuntu--lv ro
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Hygon HygonGenuine
+[    0.000000]   Centaur CentaurHauls
+[    0.000000]   zhaoxin   Shanghai  
+[    0.000000] BIOS-provided physical RAM map:
+user1@eltex-practice2-pg2-v21:~$ logout
+
+root@eltex-practice2-pg2-v21:~# visudo -f /etc/sudoers.d/user2-dmesg
+root@eltex-practice2-pg2-v21:~#  cat /etc/sudoers.d/user2-dmesg
+user2 ALL=(root) NOPASSWD: /home/user2/script.sh
+user2 ALL=(root) /usr/bin/dmesg
+
+root@eltex-practice2-pg2-v21:~# su - user2
+user2@eltex-practice2-pg2-v21:~$ sudo -l
+Matching Defaults entries for user2 on eltex-practice2-pg2-v21:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin, use_pty
+
+User user2 may run the following commands on eltex-practice2-pg2-v21:
+    (root) NOPASSWD: /home/user2/script.sh
+    (root) /usr/bin/dmesg
+
+user2@eltex-practice2-pg2-v21:~$ touch script.sh dmesg.sh
+user2@eltex-practice2-pg2-v21:~$ chmod u+s script.sh dmesg.sh
+user2@eltex-practice2-pg2-v21:~$ cat script.sh dmesg.sh
+#!/bin/bash
+dmesg -H
+
+#!/bin/bash
+sudo dmesg 
+
+user2@eltex-practice2-pg2-v21:~$ sudo ./script.sh
+[Oct18 17:23] Linux version 6.8.0-147-generic (buildd@lcy02-amd64-081) (x86_64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #147-Ubuntu SMP PREEMPT_DYNAMI>
+[  +0.000000] Command line: BOOT_IMAGE=/vmlinuz-6.8.0-147-generic root=/dev/mapper/ubuntu--vg-ubuntu--lv ro
+[  +0.000000] KERNEL supported cpus:
+[  +0.000000]   Intel GenuineIntel
+[  +0.000000]   AMD AuthenticAMD
+[  +0.000000]   Hygon HygonGenuine
+[  +0.000000]   Centaur CentaurHauls
+[  +0.000000]   zhaoxin   Shanghai  
+[  +0.000000] BIOS-provided physical RAM map:
+
+user2@eltex-practice2-pg2-v21:~$ bash dmesg.sh
+[Oct18 17:23] Linux version 6.8.0-147-generic (buildd@lcy02-amd64-081) (x86_64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, GNU ld (GNU Binutils for Ubuntu) 2.42) #147-Ubuntu SMP PREEMPT_DYNAMI>
+[  +0.000000] Command line: BOOT_IMAGE=/vmlinuz-6.8.0-147-generic root=/dev/mapper/ubuntu--vg-ubuntu--lv ro
+[  +0.000000] KERNEL supported cpus:
+[  +0.000000]   Intel GenuineIntel
+[  +0.000000]   AMD AuthenticAMD
+[  +0.000000]   Hygon HygonGenuine
+[  +0.000000]   Centaur CentaurHauls
+[  +0.000000]   zhaoxin   Shanghai  
+[  +0.000000] BIOS-provided physical RAM map:
+
+user2@eltex-practice2-pg2-v21:~$ logout
+
+root@eltex-practice2-pg2-v21:~# chage -M 10 user1
+root@eltex-practice2-pg2-v21:~# chage -M 10 user2
+root@eltex-practice2-pg2-v21:~# chage -M 10 user3
+
+root@eltex-practice2-pg2-v21:~# chage -l user1
+Last password change					: Oct 19, 2026
+Password expires					: Oct 29, 2026
+Password inactive					: never
+Account expires						: never
+Minimum number of days between password change		: 0
+Maximum number of days between password change		: 10
+Number of days of warning before password expires	: 7
+
+root@eltex-practice2-pg2-v21:~# chage -l user2
+Last password change					: Oct 19, 2026
+Password expires					: Oct 29, 2026
+Password inactive					: never
+Account expires						: never
+Minimum number of days between password change		: 0
+Maximum number of days between password change		: 10
+Number of days of warning before password expires	: 7
+
+root@eltex-practice2-pg2-v21:~# chage -l user3
+Last password change					: Oct 19, 2026
+Password expires					: Oct 29, 2026
+Password inactive					: never
+Account expires						: never
+Minimum number of days between password change		: 0
+Maximum number of days between password change		: 10
+Number of days of warning before password expires	: 7
+
+root@eltex-practice2-pg2-v21:~# echo 'Shoaib Shahid' >> /etc/motd
+root@eltex-practice2-pg2-v21:~# date '+%Y-%m-%d %H:%M:%S' >> /etc/motd
+root@eltex-practice2-pg2-v21:~# cat /etc/motd
+Shoaib Shahid
+2026-10-21 06:10:51
+
+root@eltex-practice2-pg2-v21:~# mkdir -p /root/etc_backup
+mkdir: created directory '/root/etc_backup'
+
+root@eltex-practice2-pg2-v21:~# rsync -a /etc/ /root/etc_backup/
+root@eltex-practice2-pg2-v21:~# rsync -avn /etc/ /root/etc_backup/
+sending incremental file list
+
+sent 66,569 bytes  received 256 bytes  133,650.00 bytes/sec
+total size is 2,360,045  speedup is 35.32 (DRY RUN)
+
+root@eltex-practice2-pg2-v21:~# tar -czf etc_backup.tar.gz etc_backup/
+root@eltex-practice2-pg2-v21:~# tar -cjf etc_backup.tar.bz2 etc_backup/
+root@eltex-practice2-pg2-v21:~# tar -caf etc_backup.7z etc_backup/
+
+root@eltex-practice2-pg2-v21:~# ls -lh etc_backup.tar.gz etc_backup.tar.bz2 etc_backup.7z
+-rw-r--r-- 1 root root 6.6M Oct 21 06:34 etc_backup.7z
+-rw-r--r-- 1 root root 1.1M Oct 21 06:32 etc_backup.tar.bz2
+-rw-r--r-- 1 root root 1.2M Oct 21 06:32 etc_backup.tar.gz
+
+root@eltex-practice2-pg2-v21:~# date '+%Y-%m-%d %H:%M:%S' >> /etc/motd
+root@eltex-practice2-pg2-v21:~# cat /etc/motd
+Shoaib Shahid
+2026-10-21 06:10:51
+2026-10-21 06:38:59
+
+root@eltex-practice2-pg2-v21:~# rsync -a /etc/ /root/etc_backup/
+root@eltex-practice2-pg2-v21:~# tar -rzf /root/etc_backup.tar.gz -C /root/etc_backup etc/motd
+tar: Cannot update compressed archives
+Try 'tar --help' or 'tar --usage' for more information.
+
+root@eltex-practice2-pg2-v21:~# tar -uzf /root/etc_backup.tar.gz -C /root/etc_backup etc/motd
+tar: Cannot update compressed archives
+Try 'tar --help' or 'tar --usage' for more information.
+
+root@eltex-practice2-pg2-v21:~# tar -czf /root/etc_backup_new.tar.gz -C /root etc_backup/
+root@eltex-practice2-pg2-v21:~# ls -lh
+total 9.9M
+drwxr-xr-x   4 root root 4.0K 2026-10-19 09:53 Eltex/
+drwxr-xr-x 110 root root 4.0K 2026-10-21 06:12 etc_backup/
+-rw-r--r--   1 root root 6.6M 2026-10-21 06:34 etc_backup.7z
+-rw-r--r--   1 root root 1.2M 2026-10-21 06:45 etc_backup_new.tar.gz
+-rw-r--r--   1 root root 1.1M 2026-10-21 06:32 etc_backup.tar.bz2
+-rw-r--r--   1 root root 1.2M 2026-10-21 06:32 etc_backup.tar.gz
+
+root@eltex-practice2-pg2-v21:~# tar -df etc_backup.tar.bz2
+etc_backup/motd: Mod time differs
+etc_backup/motd: Size differs
+
+root@eltex-practice2-pg2-v21:~# mkdir -p /root/etc_backup_gzip
+mkdir: created directory '/root/etc_backup_gzip'
+root@eltex-practice2-pg2-v21:~# mkdir -p /root/etc_backup_7zip
+mkdir: created directory '/root/etc_backup_7zip'
+
+root@eltex-practice2-pg2-v21:~# tar -xzf /root/etc_backup.tar.gz -C /root/etc_backup_gzip
+root@eltex-practice2-pg2-v21:~# tar -axf /root/etc_backup.7z -C /root/etc_backup_7zip
+root@eltex-practice2-pg2-v21:~# diff -s /root/etc_backup_gzip/etc_backup/motd /root/etc_backup_7zip/etc_backup/motd
+Files /root/etc_backup_gzip/etc_backup/motd and /root/etc_backup_7zip/etc_backup/motd are identical
+
+root@eltex-practice2-pg2-v21:~# mkdir -p new_gzip
+mkdir: created directory 'new_gzip'
+root@eltex-practice2-pg2-v21:~# tar -xzf /root/etc_backup_new.tar.gz -C /root/new_gzip
+root@eltex-practice2-pg2-v21:~# diff -s  /root/new_gzip/etc_backup/motd /root/etc_backup_gzip/etc_backup/motd
+3d2
+< 2026-10-21 06:38:59
+
+
+
+
+
+
+
