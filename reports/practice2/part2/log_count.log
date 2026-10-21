@@ -1,0 +1,17 @@
+   1174 CRON:
+    176 sudo:
+    124 sshd:
+    117 su:
+     82 systemd-logind:
+     30 polkitd:
+     17 (systemd):
+      9 useradd:
+      7 usermod:
+      6 passwd:
+      6 groupadd:
+      5 userdel:
+      3 (sd-pam):
+      3 nologin:
+      3 chage:
+      1 gpasswd:
+      1 chfn:

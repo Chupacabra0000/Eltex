@@ -1,0 +1,1764 @@
+chage: changed password expiry for user1
+chage: changed password expiry for user2
+chage: changed password expiry for user3
+chfn: changed user 'test' information
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session closed for user root
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+CRON: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+gpasswd: members of group users set by root to test
+groupadd: group added to /etc/group: name=practicegroup, GID=1004
+groupadd: group added to /etc/group: name=test, GID=1005
+groupadd: group added to /etc/gshadow: name=practicegroup
+groupadd: group added to /etc/gshadow: name=test
+groupadd: new group: name=practicegroup, GID=1004
+groupadd: new group: name=test, GID=1005
+nologin: Attempted login by root (UID: 1003) on /dev/pts/0
+nologin: Attempted login by root (UID: 1003) on /dev/pts/0
+nologin: Attempted login by root (UID: 1003) on /dev/pts/0
+passwd: pam_unix(passwd:chauthtok): password changed for rana
+passwd: pam_unix(passwd:chauthtok): password changed for root
+passwd: pam_unix(passwd:chauthtok): password changed for test
+passwd: pam_unix(passwd:chauthtok): password changed for user1
+passwd: pam_unix(passwd:chauthtok): password changed for user2
+passwd: pam_unix(passwd:chauthtok): password changed for user3
+polkitd: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+polkitd: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+polkitd: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+polkitd: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+polkitd: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+polkitd: Collecting garbage unconditionally...
+polkitd: Collecting garbage unconditionally...
+polkitd: Finished loading, compiling and executing 6 rules
+polkitd: Finished loading, compiling and executing 6 rules
+polkitd: Finished loading, compiling and executing 6 rules
+polkitd: Finished loading, compiling and executing 6 rules
+polkitd: Finished loading, compiling and executing 6 rules
+polkitd: Finished loading, compiling and executing 6 rules
+polkitd: Finished loading, compiling and executing 6 rules
+polkitd: Loading rules from directory /etc/polkit-1/rules.d
+polkitd: Loading rules from directory /etc/polkit-1/rules.d
+polkitd: Loading rules from directory /etc/polkit-1/rules.d
+polkitd: Loading rules from directory /etc/polkit-1/rules.d
+polkitd: Loading rules from directory /etc/polkit-1/rules.d
+polkitd: Loading rules from directory /etc/polkit-1/rules.d
+polkitd: Loading rules from directory /etc/polkit-1/rules.d
+polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+polkitd: Loading rules from directory /usr/share/polkit-1/rules.d
+polkitd: Reloading rules
+polkitd: Reloading rules
+(sd-pam): pam_unix(systemd-user:session): session closed for user root
+(sd-pam): pam_unix(systemd-user:session): session closed for user root
+(sd-pam): pam_unix(systemd-user:session): session closed for user root
+sshd: Accepted password for root from 172.16.8.4 port 37344 ssh2
+sshd: Accepted password for root from 172.16.8.4 port 39472 ssh2
+sshd: Accepted password for root from 172.16.8.4 port 42980 ssh2
+sshd: Accepted publickey for root from 172.16.8.4 port 35168 ssh2: ED25519 SHA256:jXvS8VkFlRRBJ9DqIoskwunTJ3/nHVXzef1DX2VyVJw
+sshd: Accepted publickey for root from 172.16.8.4 port 35510 ssh2: ED25519 SHA256:jXvS8VkFlRRBJ9DqIoskwunTJ3/nHVXzef1DX2VyVJw
+sshd: Accepted publickey for root from 172.16.8.4 port 35560 ssh2: ED25519 SHA256:jXvS8VkFlRRBJ9DqIoskwunTJ3/nHVXzef1DX2VyVJw
+sshd: Accepted publickey for root from 172.16.8.4 port 36252 ssh2: ED25519 SHA256:jXvS8VkFlRRBJ9DqIoskwunTJ3/nHVXzef1DX2VyVJw
+sshd: Accepted publickey for root from 172.16.8.4 port 38632 ssh2: ED25519 SHA256:jXvS8VkFlRRBJ9DqIoskwunTJ3/nHVXzef1DX2VyVJw
+sshd: Accepted publickey for root from 172.16.8.4 port 39438 ssh2: ED25519 SHA256:jXvS8VkFlRRBJ9DqIoskwunTJ3/nHVXzef1DX2VyVJw
+sshd: Accepted publickey for root from 172.16.8.4 port 40412 ssh2: ED25519 SHA256:jXvS8VkFlRRBJ9DqIoskwunTJ3/nHVXzef1DX2VyVJw
+sshd: Accepted publickey for root from 172.16.8.4 port 40606 ssh2: ED25519 SHA256:jXvS8VkFlRRBJ9DqIoskwunTJ3/nHVXzef1DX2VyVJw
+sshd: Accepted publickey for root from 172.16.8.4 port 44422 ssh2: ED25519 SHA256:jXvS8VkFlRRBJ9DqIoskwunTJ3/nHVXzef1DX2VyVJw
+sshd: Accepted publickey for root from 172.16.8.4 port 45552 ssh2: ED25519 SHA256:jXvS8VkFlRRBJ9DqIoskwunTJ3/nHVXzef1DX2VyVJw
+sshd: Accepted publickey for root from 172.16.8.4 port 47404 ssh2: ED25519 SHA256:jXvS8VkFlRRBJ9DqIoskwunTJ3/nHVXzef1DX2VyVJw
+sshd: Accepted publickey for root from 172.16.8.4 port 52814 ssh2: ED25519 SHA256:jXvS8VkFlRRBJ9DqIoskwunTJ3/nHVXzef1DX2VyVJw
+sshd: Accepted publickey for root from 172.16.8.4 port 53120 ssh2: ED25519 SHA256:jXvS8VkFlRRBJ9DqIoskwunTJ3/nHVXzef1DX2VyVJw
+sshd: Accepted publickey for root from 172.16.8.4 port 53408 ssh2: ED25519 SHA256:jXvS8VkFlRRBJ9DqIoskwunTJ3/nHVXzef1DX2VyVJw
+sshd: Accepted publickey for root from 172.16.8.4 port 53604 ssh2: ED25519 SHA256:jXvS8VkFlRRBJ9DqIoskwunTJ3/nHVXzef1DX2VyVJw
+sshd: Accepted publickey for root from 172.16.8.4 port 53676 ssh2: ED25519 SHA256:jXvS8VkFlRRBJ9DqIoskwunTJ3/nHVXzef1DX2VyVJw
+sshd: Accepted publickey for root from 172.16.8.4 port 54950 ssh2: ED25519 SHA256:jXvS8VkFlRRBJ9DqIoskwunTJ3/nHVXzef1DX2VyVJw
+sshd: Accepted publickey for root from 172.16.8.4 port 55132 ssh2: ED25519 SHA256:jXvS8VkFlRRBJ9DqIoskwunTJ3/nHVXzef1DX2VyVJw
+sshd: Accepted publickey for root from 172.16.8.4 port 55360 ssh2: ED25519 SHA256:jXvS8VkFlRRBJ9DqIoskwunTJ3/nHVXzef1DX2VyVJw
+sshd: Accepted publickey for root from 172.16.8.4 port 55926 ssh2: ED25519 SHA256:jXvS8VkFlRRBJ9DqIoskwunTJ3/nHVXzef1DX2VyVJw
+sshd: Accepted publickey for root from 172.16.8.4 port 57942 ssh2: ED25519 SHA256:jXvS8VkFlRRBJ9DqIoskwunTJ3/nHVXzef1DX2VyVJw
+sshd: Connection closed by authenticating user root 172.16.8.4 port 39110 [preauth]
+sshd: Connection closed by authenticating user root 172.16.8.4 port 42954 [preauth]
+sshd: Connection closed by authenticating user root 172.16.8.4 port 42970 [preauth]
+sshd: Connection closed by authenticating user root 172.16.8.4 port 53396 [preauth]
+sshd: Disconnected from user root 172.16.8.4 port 35168
+sshd: Disconnected from user root 172.16.8.4 port 35510
+sshd: Disconnected from user root 172.16.8.4 port 36252
+sshd: Disconnected from user root 172.16.8.4 port 37344
+sshd: Disconnected from user root 172.16.8.4 port 39438
+sshd: Disconnected from user root 172.16.8.4 port 39472
+sshd: Disconnected from user root 172.16.8.4 port 40606
+sshd: Disconnected from user root 172.16.8.4 port 42980
+sshd: Disconnected from user root 172.16.8.4 port 44422
+sshd: Disconnected from user root 172.16.8.4 port 45552
+sshd: Disconnected from user root 172.16.8.4 port 47404
+sshd: Disconnected from user root 172.16.8.4 port 52814
+sshd: Disconnected from user root 172.16.8.4 port 53120
+sshd: Disconnected from user root 172.16.8.4 port 53408
+sshd: Disconnected from user root 172.16.8.4 port 53604
+sshd: Disconnected from user root 172.16.8.4 port 53676
+sshd: Disconnected from user root 172.16.8.4 port 54950
+sshd: Disconnected from user root 172.16.8.4 port 55360
+sshd: Disconnected from user root 172.16.8.4 port 55926
+sshd: Exiting on signal 15
+sshd: Failed password for root from 172.16.8.4 port 39110 ssh2
+sshd: message repeated 2 times: [ Failed password for root from 172.16.8.4 port 39110 ssh2]
+sshd: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.16.8.4 user=root
+sshd: pam_unix(sshd:session): session closed for user root
+sshd: pam_unix(sshd:session): session closed for user root
+sshd: pam_unix(sshd:session): session closed for user root
+sshd: pam_unix(sshd:session): session closed for user root
+sshd: pam_unix(sshd:session): session closed for user root
+sshd: pam_unix(sshd:session): session closed for user root
+sshd: pam_unix(sshd:session): session closed for user root
+sshd: pam_unix(sshd:session): session closed for user root
+sshd: pam_unix(sshd:session): session closed for user root
+sshd: pam_unix(sshd:session): session closed for user root
+sshd: pam_unix(sshd:session): session closed for user root
+sshd: pam_unix(sshd:session): session closed for user root
+sshd: pam_unix(sshd:session): session closed for user root
+sshd: pam_unix(sshd:session): session closed for user root
+sshd: pam_unix(sshd:session): session closed for user root
+sshd: pam_unix(sshd:session): session closed for user root
+sshd: pam_unix(sshd:session): session closed for user root
+sshd: pam_unix(sshd:session): session closed for user root
+sshd: pam_unix(sshd:session): session closed for user root
+sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+sshd: Received disconnect from 172.16.8.4 port 35168:11: disconnected by user
+sshd: Received disconnect from 172.16.8.4 port 35510:11: disconnected by user
+sshd: Received disconnect from 172.16.8.4 port 36252:11: disconnected by user
+sshd: Received disconnect from 172.16.8.4 port 37344:11: disconnected by user
+sshd: Received disconnect from 172.16.8.4 port 39438:11: disconnected by user
+sshd: Received disconnect from 172.16.8.4 port 39472:11: disconnected by user
+sshd: Received disconnect from 172.16.8.4 port 40606:11: disconnected by user
+sshd: Received disconnect from 172.16.8.4 port 42980:11: disconnected by user
+sshd: Received disconnect from 172.16.8.4 port 44422:11: disconnected by user
+sshd: Received disconnect from 172.16.8.4 port 45552:11: disconnected by user
+sshd: Received disconnect from 172.16.8.4 port 47404:11: disconnected by user
+sshd: Received disconnect from 172.16.8.4 port 52814:11: disconnected by user
+sshd: Received disconnect from 172.16.8.4 port 53120:11: disconnected by user
+sshd: Received disconnect from 172.16.8.4 port 53408:11: disconnected by user
+sshd: Received disconnect from 172.16.8.4 port 53604:11: disconnected by user
+sshd: Received disconnect from 172.16.8.4 port 53676:11: disconnected by user
+sshd: Received disconnect from 172.16.8.4 port 54950:11: disconnected by user
+sshd: Received disconnect from 172.16.8.4 port 55360:11: disconnected by user
+sshd: Received disconnect from 172.16.8.4 port 55926:11: disconnected by user
+sshd: Received signal 15; terminating.
+sshd: Server listening on 0.0.0.0 port 22.
+sshd: Server listening on 0.0.0.0 port 22.
+sshd: Server listening on 0.0.0.0 port 22.
+sshd: Server listening on 0.0.0.0 port 22.
+sshd: Server listening on 0.0.0.0 port 22.
+sshd: Server listening on :: port 22.
+sshd: Server listening on :: port 22.
+sshd: Server listening on :: port 22.
+sshd: Server listening on :: port 22.
+sshd: Server listening on :: port 22.
+su: pam_unix(su-l:session): session closed for user rana
+su: pam_unix(su-l:session): session closed for user rana
+su: pam_unix(su-l:session): session closed for user rana
+su: pam_unix(su-l:session): session closed for user rana
+su: pam_unix(su-l:session): session closed for user rana
+su: pam_unix(su-l:session): session closed for user rana
+su: pam_unix(su-l:session): session closed for user rana
+su: pam_unix(su-l:session): session closed for user root
+su: pam_unix(su-l:session): session closed for user root
+su: pam_unix(su-l:session): session closed for user tech
+su: pam_unix(su-l:session): session closed for user test
+su: pam_unix(su-l:session): session closed for user test
+su: pam_unix(su-l:session): session closed for user test
+su: pam_unix(su-l:session): session closed for user user1
+su: pam_unix(su-l:session): session closed for user user1
+su: pam_unix(su-l:session): session closed for user user1
+su: pam_unix(su-l:session): session closed for user user1
+su: pam_unix(su-l:session): session closed for user user1
+su: pam_unix(su-l:session): session closed for user user1
+su: pam_unix(su-l:session): session closed for user user1
+su: pam_unix(su-l:session): session closed for user user1
+su: pam_unix(su-l:session): session closed for user user1
+su: pam_unix(su-l:session): session closed for user user2
+su: pam_unix(su-l:session): session closed for user user2
+su: pam_unix(su-l:session): session closed for user user2
+su: pam_unix(su-l:session): session closed for user user2
+su: pam_unix(su-l:session): session closed for user user2
+su: pam_unix(su-l:session): session closed for user user2
+su: pam_unix(su-l:session): session closed for user user2
+su: pam_unix(su-l:session): session closed for user user2
+su: pam_unix(su-l:session): session closed for user user2
+su: pam_unix(su-l:session): session closed for user user2
+su: pam_unix(su-l:session): session closed for user user2
+su: pam_unix(su-l:session): session closed for user user2
+su: pam_unix(su-l:session): session closed for user user3
+su: pam_unix(su-l:session): session closed for user user3
+su: pam_unix(su-l:session): session closed for user user3
+su: pam_unix(su-l:session): session opened for user rana(uid=1004) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user rana(uid=1004) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user rana(uid=1004) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user rana(uid=1004) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user rana(uid=1004) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user rana(uid=1004) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user rana(uid=1004) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user root(uid=0) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user root(uid=0) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user tech(uid=1000) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user test(uid=1005) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user test(uid=1005) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user test(uid=1005) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user user1(uid=1001) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user user1(uid=1001) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user user1(uid=1001) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user user1(uid=1001) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user user1(uid=1001) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user user1(uid=1001) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user user1(uid=1001) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user user1(uid=1001) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user user1(uid=1001) by root(uid=1005)
+su: pam_unix(su-l:session): session opened for user user2(uid=1002) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user user2(uid=1002) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user user2(uid=1002) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user user2(uid=1002) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user user2(uid=1002) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user user2(uid=1002) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user user2(uid=1002) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user user2(uid=1002) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user user2(uid=1002) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user user2(uid=1002) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user user2(uid=1002) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user user2(uid=1002) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user user3(uid=1003) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user user3(uid=1003) by root(uid=0)
+su: pam_unix(su-l:session): session opened for user user3(uid=1003) by root(uid=0)
+su: pam_unix(su:session): session closed for user root
+su: pam_unix(su:session): session closed for user user3
+su: pam_unix(su:session): session opened for user root(uid=0) by root(uid=0)
+su: pam_unix(su:session): session opened for user user3(uid=1003) by root(uid=0)
+su: (to rana) root on pts/0
+su: (to rana) root on pts/0
+su: (to rana) root on pts/1
+su: (to rana) root on pts/1
+su: (to rana) root on pts/1
+su: (to rana) root on pts/1
+su: (to rana) root on pts/1
+su: (to root) root on pts/1
+su: (to root) root on pts/1
+su: (to root) root on pts/1
+su: (to tech) root on pts/0
+su: (to test) root on pts/1
+su: (to test) root on pts/1
+su: (to test) root on pts/2
+su: (to user1) root on pts/0
+su: (to user1) root on pts/0
+su: (to user1) root on pts/0
+su: (to user1) root on pts/0
+su: (to user1) root on pts/0
+su: (to user1) root on pts/1
+su: (to user1) root on pts/1
+su: (to user1) root on pts/1
+su: (to user1) test on pts/1
+su: (to user2) root on pts/0
+su: (to user2) root on pts/0
+su: (to user2) root on pts/0
+su: (to user2) root on pts/1
+su: (to user2) root on pts/1
+su: (to user2) root on pts/1
+su: (to user2) root on pts/1
+su: (to user2) root on pts/1
+su: (to user2) root on pts/1
+su: (to user2) root on pts/1
+su: (to user2) root on pts/1
+su: (to user2) root on pts/1
+su: (to user3) root on pts/0
+su: (to user3) root on pts/0
+su: (to user3) root on pts/0
+su: (to user3) root on pts/0
+sudo: pam_unix(sudo:auth): authentication failure; logname=root uid=1004 euid=0 tty=/dev/pts/1 ruser=rana rhost= user=rana
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session closed for user root
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=0)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=1001)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=1001)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=1001)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=1002)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=1002)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=1002)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=1002)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=1002)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=1002)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=1002)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=1002)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=1004)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=1004)
+sudo: pam_unix(sudo:session): session opened for user root(uid=0) by root(uid=1004)
+sudo: rana : TTY=pts/0 ; PWD=/home/rana ; USER=root ; COMMAND=/usr/bin/apt install tree
+sudo: rana : TTY=pts/1 ; PWD=/home/rana ; USER=root ; COMMAND=/usr/bin/chown -R rana: etc_backup/
+sudo: rana : TTY=pts/1 ; PWD=/home/rana ; USER=root ; COMMAND=/usr/bin/tar -cf etc_backup/ etc_backup.tar
+sudo: rana : user NOT in sudoers ; TTY=pts/0 ; PWD=/home/rana ; USER=root ; COMMAND=/usr/bin/chown -R rana: etc
+sudo: rana : user NOT in sudoers ; TTY=pts/1 ; PWD=/home/rana ; USER=root ; COMMAND=/usr/bin/cp -R /etc .
+sudo: rana : user NOT in sudoers ; TTY=pts/1 ; PWD=/home/rana ; USER=root ; COMMAND=/usr/bin/su -
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt dist-upgrade
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt install colordiff
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt update
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt update
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt update
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt update
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/cat /etc/group
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/cat /etc/group
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/cat etc/shadow
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/cp -R /etc /home/rana/
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/dmesg
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/dmesg
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/dmesg
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/dmesg -H
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/dmesg ---human
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/localectl set-locale LC_TIME=C.UTF-8
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/passwd rana
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/su -
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/su -
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/sudo etc/shadow
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/su - rana
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/su - rana
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/su - rana
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/su - rana
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/su - rana
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/timedatectl set-ntp true
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/timedatectl set-timezone Asia/Novosibirsk
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/adduser -m -s /bin/bash rana
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/locale-gen en_GB.UTF-8
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/update-locale
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/useradd -m -s /bin/bash rana
+sudo: root : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/userdel -r test
+sudo: root : TTY=pts/1 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt install 7zip
+sudo: root : TTY=pts/1 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt install 7zip
+sudo: root : TTY=pts/1 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt install bzip2
+sudo: root : TTY=pts/1 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/passwd
+sudo: root : TTY=pts/1 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/su - test
+sudo: root : TTY=pts/1 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/adduser test
+sudo: test : user NOT in sudoers ; TTY=pts/2 ; PWD=/home/test ; USER=root ; COMMAND=/usr/bin/su - user1
+sudo: user1 : TTY=pts/1 ; PWD=/home/user1 ; USER=root ; COMMAND=/usr/bin/dmesg
+sudo: user1 : TTY=pts/1 ; PWD=/home/user1 ; USER=root ; COMMAND=/usr/bin/dmesg
+sudo: user1 : TTY=pts/1 ; PWD=/home/user1 ; USER=root ; COMMAND=/usr/bin/dmesg
+sudo: user2 : command not allowed ; TTY=pts/0 ; PWD=/home/user2 ; USER=root ; COMMAND=./dmesg.sh
+sudo: user2 : command not allowed ; TTY=pts/0 ; PWD=/home/user2 ; USER=root ; COMMAND=./dmesg.sh
+sudo: user2 : command not allowed ; TTY=pts/0 ; PWD=/home/user2 ; USER=root ; COMMAND=/usr/bin/bash dmesg.sh
+sudo: user2 : command not allowed ; TTY=pts/1 ; PWD=/home/user2 ; USER=root ; COMMAND=./script.sh
+sudo: user2 : command not allowed ; TTY=pts/1 ; PWD=/home/user2 ; USER=root ; COMMAND=/usr/bin/dmesg -H
+sudo: user2 : command not allowed ; TTY=pts/1 ; PWD=/home/user2 ; USER=root ; COMMAND=/usr/bin/rm script.sh
+sudo: user2 : TTY=pts/0 ; PWD=/home/user2 ; USER=root ; COMMAND=/usr/bin/dmesg
+sudo: user2 : TTY=pts/0 ; PWD=/home/user2 ; USER=root ; COMMAND=/usr/bin/dmesg
+sudo: user2 : TTY=pts/0 ; PWD=/home/user2 ; USER=root ; COMMAND=/usr/bin/dmesg
+sudo: user2 : TTY=pts/1 ; PWD=/home/user2 ; USER=root ; COMMAND=/home/user2/script.sh
+sudo: user2 : TTY=pts/1 ; PWD=/home/user2 ; USER=root ; COMMAND=/home/user2/script.sh
+sudo: user2 : TTY=pts/1 ; PWD=/home/user2 ; USER=root ; COMMAND=/home/user2/script.sh
+sudo: user2 : TTY=pts/1 ; PWD=/home/user2 ; USER=root ; COMMAND=/home/user2/script.sh
+sudo: user2 : TTY=pts/1 ; PWD=/home/user2 ; USER=root ; COMMAND=/usr/bin/dmesg
+(systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+(systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+(systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+(systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+(systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+(systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+(systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+(systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+(systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+(systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+(systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+(systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+(systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+(systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+(systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+(systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+(systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+systemd-logind: Creating /run/nologin, blocking further logins...
+systemd-logind: New seat seat0.
+systemd-logind: New seat seat0.
+systemd-logind: New seat seat0.
+systemd-logind: New seat seat0.
+systemd-logind: New session 124 of user root.
+systemd-logind: New session 127 of user root.
+systemd-logind: New session 129 of user root.
+systemd-logind: New session 132 of user root.
+systemd-logind: New session 139 of user root.
+systemd-logind: New session 142 of user root.
+systemd-logind: New session 145 of user root.
+systemd-logind: New session 149 of user root.
+systemd-logind: New session 161 of user root.
+systemd-logind: New session 1 of user root.
+systemd-logind: New session 1 of user root.
+systemd-logind: New session 1 of user root.
+systemd-logind: New session 206 of user root.
+systemd-logind: New session 219 of user root.
+systemd-logind: New session 21 of user root.
+systemd-logind: New session 23 of user root.
+systemd-logind: New session 23 of user root.
+systemd-logind: New session 24 of user root.
+systemd-logind: New session 262 of user root.
+systemd-logind: New session 26 of user root.
+systemd-logind: New session 32 of user root.
+systemd-logind: New session 48 of user root.
+systemd-logind: New session 58 of user root.
+systemd-logind: New session 7 of user root.
+systemd-logind: Removed session 1.
+systemd-logind: Removed session 1.
+systemd-logind: Removed session 124.
+systemd-logind: Removed session 127.
+systemd-logind: Removed session 129.
+systemd-logind: Removed session 132.
+systemd-logind: Removed session 139.
+systemd-logind: Removed session 142.
+systemd-logind: Removed session 145.
+systemd-logind: Removed session 149.
+systemd-logind: Removed session 161.
+systemd-logind: Removed session 21.
+systemd-logind: Removed session 219.
+systemd-logind: Removed session 23.
+systemd-logind: Removed session 23.
+systemd-logind: Removed session 26.
+systemd-logind: Removed session 32.
+systemd-logind: Removed session 48.
+systemd-logind: Removed session 7.
+systemd-logind: Session 124 logged out. Waiting for processes to exit.
+systemd-logind: Session 127 logged out. Waiting for processes to exit.
+systemd-logind: Session 129 logged out. Waiting for processes to exit.
+systemd-logind: Session 132 logged out. Waiting for processes to exit.
+systemd-logind: Session 139 logged out. Waiting for processes to exit.
+systemd-logind: Session 142 logged out. Waiting for processes to exit.
+systemd-logind: Session 145 logged out. Waiting for processes to exit.
+systemd-logind: Session 149 logged out. Waiting for processes to exit.
+systemd-logind: Session 161 logged out. Waiting for processes to exit.
+systemd-logind: Session 1 logged out. Waiting for processes to exit.
+systemd-logind: Session 1 logged out. Waiting for processes to exit.
+systemd-logind: Session 219 logged out. Waiting for processes to exit.
+systemd-logind: Session 21 logged out. Waiting for processes to exit.
+systemd-logind: Session 23 logged out. Waiting for processes to exit.
+systemd-logind: Session 23 logged out. Waiting for processes to exit.
+systemd-logind: Session 26 logged out. Waiting for processes to exit.
+systemd-logind: Session 32 logged out. Waiting for processes to exit.
+systemd-logind: Session 48 logged out. Waiting for processes to exit.
+systemd-logind: Session 7 logged out. Waiting for processes to exit.
+systemd-logind: System is powering down (hypervisor initiated shutdown).
+systemd-logind: System is rebooting.
+systemd-logind: System is rebooting.
+systemd-logind: System is rebooting.
+systemd-logind: The system will reboot now!
+systemd-logind: The system will reboot now!
+systemd-logind: The system will reboot now!
+systemd-logind: Watching system buttons on /dev/input/event0 (Power Button)
+systemd-logind: Watching system buttons on /dev/input/event0 (Power Button)
+systemd-logind: Watching system buttons on /dev/input/event0 (Power Button)
+systemd-logind: Watching system buttons on /dev/input/event0 (Power Button)
+systemd-logind: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+systemd-logind: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+systemd-logind: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+systemd-logind: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+useradd: new group: name=rana, GID=1005
+useradd: new group: name=user1, GID=1001
+useradd: new group: name=user2, GID=1002
+useradd: new group: name=user3, GID=1003
+useradd: new user: name=rana, UID=1004, GID=1005, home=/home/rana, shell=/bin/bash, from=/dev/pts/1
+useradd: new user: name=test, UID=1005, GID=1005, home=/home/test, shell=/bin/bash, from=/dev/pts/2
+useradd: new user: name=user1, UID=1001, GID=1001, home=/home/user1, shell=/bin/bash, from=/dev/pts/0
+useradd: new user: name=user2, UID=1002, GID=1002, home=/home/user2, shell=/bin/bash, from=/dev/pts/0
+useradd: new user: name=user3, UID=1003, GID=1003, home=/home/user3, shell=/bin/bash, from=/dev/pts/0
+userdel: delete 'test' from group 'users'
+userdel: delete 'test' from shadow group 'users'
+userdel: delete user 'test'
+userdel: removed group 'test' owned by 'test'
+userdel: removed shadow group 'test' owned by 'test'
+usermod: add 'user1' to group 'practicegroup'
+usermod: add 'user1' to shadow group 'practicegroup'
+usermod: add 'user2' to group 'practicegroup'
+usermod: add 'user2' to shadow group 'practicegroup'
+usermod: add 'user3' to group 'practicegroup'
+usermod: add 'user3' to shadow group 'practicegroup'
+usermod: change user 'user3' shell from '/bin/bash' to '/usr/sbin/nologin'
