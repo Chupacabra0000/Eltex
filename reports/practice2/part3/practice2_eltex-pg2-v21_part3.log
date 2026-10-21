@@ -1,0 +1,185 @@
+root@eltex-practice2-pg2-v21:~# touch "practice2_${MYUSER}_part3.log"
+root@eltex-practice2-pg2-v21:~# git --version
+git version 2.43.0
+root@eltex-practice2-pg2-v21:~# gh --version
+gh version 2.45.0 (2025-07-18 Ubuntu 2.45.0-1ubuntu0.3)
+https://github.com/cli/cli/releases/tag/v2.45.0
+
+root@eltex-practice2-pg2-v21:~# git config --global --list
+user.email=rana.shoaib7777@gmail.com
+user.name=coderror
+init.defaultbranch=main
+
+root@eltex-practice2-pg2-v21:~# gh auth login
+? What account do you want to log into? GitHub.com
+? What is your preferred protocol for Git operations on this host? SSH
+? Upload your SSH public key to your GitHub account? /root/.ssh/id_ed25519.pub
+? Title for your SSH key: Eltex module2
+? How would you like to authenticate GitHub CLI? Login with a web browser
+
+! First copy your one-time code: --------
+Press Enter to open github.com in your browser... 
+! Failed opening a web browser at https://github.com/login/device
+  exec: "xdg-open,x-www-browser,www-browser,wslview": executable file not found in $PATH
+  Please try entering the URL in your browser manually
+✓ Authentication complete.
+- gh config set -h github.com git_protocol ssh
+✓ Configured git protocol
+! Authentication credentials saved in plain text
+✓ SSH key already existed on your GitHub account: /root/.ssh/id_ed25519.pub
+✓ Logged in as Chupacabra0000
+
+root@eltex-practice2-pg2-v21:~# gh auth setup-git --hostname github.com
+root@eltex-practice2-pg2-v21:~# gh auth status
+github.com
+  ✓ Logged in to github.com account Chupacabra0000 (/root/.config/gh/hosts.yml)
+  - Active account: true
+  - Git operations protocol: ssh
+  - Token: gho_************************************
+  - Token scopes: 'admin:public_key', 'gist', 'read:org', 'repo'
+
+root@eltex-practice2-pg2-v21:~# gh repo create --public eltex-practice2
+✓ Created repository Chupacabra0000/eltex-practice2 on GitHub
+  https://github.com/Chupacabra0000/eltex-practice2
+root@eltex-practice2-pg2-v21:~# mkdir -p ~/eltex-practice2
+mkdir: created directory '/root/eltex-practice2'
+root@eltex-practice2-pg2-v21:~# cd ~/eltex-practice2
+root@eltex-practice2-pg2-v21:~/eltex-practice2# echo "# Eltex Practice 2" >> README.md
+root@eltex-practice2-pg2-v21:~/eltex-practice2# git init
+Initialized empty Git repository in /root/eltex-practice2/.git/
+root@eltex-practice2-pg2-v21:~/eltex-practice2# git add README.md 
+root@eltex-practice2-pg2-v21:~/eltex-practice2# git commit -m "my first commit"
+[main (root-commit) e7efd35] my first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+root@eltex-practice2-pg2-v21:~/eltex-practice2# git branch -M main
+root@eltex-practice2-pg2-v21:~/eltex-practice2# git remote add origin https://github.com/Chupacabra0000/eltex-practice2.git
+root@eltex-practice2-pg2-v21:~/eltex-practice2# git status
+On branch main
+nothing to commit, working tree clean
+root@eltex-practice2-pg2-v21:~/eltex-practice2# git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 236 bytes | 236.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Chupacabra0000/eltex-practice2.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+root@eltex-practice2-pg2-v21:~/eltex-practice2# mkdir -p module1/task1
+mkdir: created directory 'module1'
+mkdir: created directory 'module1/task1'
+root@eltex-practice2-pg2-v21:~/eltex-practice2# mkdir -p module1/task2
+mkdir: created directory 'module1/task2'
+root@eltex-practice2-pg2-v21:~/eltex-practice2# mkdir -p module1/task3
+mkdir: created directory 'module1/task3'
+
+eltex-pg2-v21@eltex-2026-autumn:~$ scp /home/eltex-pg2-v21/eltex-pg2-v21_part.log root@172.16.9.221:/root/eltex-practice2/module1/task2/
+eltex-pg2-v21_part.log                                                                                                                                                       100% 7093    13.4MB/s   00:00    
+eltex-pg2-v21@eltex-2026-autumn:~$ scp /home/eltex-pg2-v21/eltex-pg2-v21_part2.log root@172.16.9.221:/root/eltex-practice2/module1/task3/
+eltex-pg2-v21_part2.log 
+
+root@eltex-practice2-pg2-v21:~/eltex-practice2# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	module1/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+root@eltex-practice2-pg2-v21:~/eltex-practice2# git add .
+root@eltex-practice2-pg2-v21:~/eltex-practice2# git commit -m "log files of part 2 and 3 upload"
+[main 46bca65] log files of part 2 and 3 upload
+ 2 files changed, 613 insertions(+)
+ create mode 100644 module1/task2/eltex-pg2-v21_part.log
+ create mode 100644 module1/task3/eltex-pg2-v21_part2.log
+
+root@eltex-practice2-pg2-v21:~/eltex-practice2# git push 
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 5.40 KiB | 5.40 MiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Chupacabra0000/eltex-practice2.git
+   e7efd35..46bca65  main -> main
+
+root@eltex-practice2-pg2-v21:~# cd ~
+root@eltex-practice2-pg2-v21:~# mkdir -p ~/eltex-practice2_clone
+mkdir: created directory '/root/eltex-practice2_clone'
+root@eltex-practice2-pg2-v21:~# cd ~/eltex-practice2_clone
+root@eltex-practice2-pg2-v21:~/eltex-practice2_clone# git clone https://github.com/Chupacabra0000/eltex-practice2.git .
+Cloning into '.'...
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 10 (delta 0), reused 10 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (10/10), 5.59 KiB | 5.59 MiB/s, done.
+
+root@eltex-practice2-pg2-v21:~/eltex-practice2_clone# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+root@eltex-practice2-pg2-v21:~/eltex-practice2_clone# git remote -v
+origin	https://github.com/Chupacabra0000/eltex-practice2.git (fetch)
+origin	https://github.com/Chupacabra0000/eltex-practice2.git (push)
+root@eltex-practice2-pg2-v21:~/eltex-practice2_clone# git log --oneline
+46bca65 (HEAD -> main, origin/main, origin/HEAD) log files of part 2 and 3 upload
+e7efd35 my first commit
+root@eltex-practice2-pg2-v21:~/eltex-practice2_clone# echo "Updated from cloned repository" >> README.md
+root@eltex-practice2-pg2-v21:~/eltex-practice2_clone# git add README.md
+root@eltex-practice2-pg2-v21:~/eltex-practice2_clone# git commit -m "Update README from clone"
+[main e27c261] Update README from clone
+ 1 file changed, 1 insertion(+)
+root@eltex-practice2-pg2-v21:~/eltex-practice2_clone# git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 338 bytes | 338.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Chupacabra0000/eltex-practice2.git
+   46bca65..e27c261  main -> main
+root@eltex-practice2-pg2-v21:~/eltex-practice2_clone# cd ~/eltex-practice2
+root@eltex-practice2-pg2-v21:~/eltex-practice2# git fetch
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 318 bytes | 318.00 KiB/s, done.
+From https://github.com/Chupacabra0000/eltex-practice2
+   46bca65..e27c261  main       -> origin/main
+root@eltex-practice2-pg2-v21:~/eltex-practice2# git log origin/main --oneline
+e27c261 (origin/main) Update README from clone
+46bca65 (HEAD -> main) log files of part 2 and 3 upload
+e7efd35 my first commit
+root@eltex-practice2-pg2-v21:~/eltex-practice2# git diff main origin/main
+diff --git a/README.md b/README.md
+index 20cf17a..9da2282 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1,2 @@
+ # Eltex Practice 2
++Updated from cloned repository
+
+root@eltex-practice2-pg2-v21:~/eltex-practice2# git merge origin/main
+Updating 46bca65..e27c261
+Fast-forward
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+root@eltex-practice2-pg2-v21:~/eltex-practice2# git pull
+Already up to date.
+
+root@eltex-practice2-pg2-v21:~/eltex-practice2# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+root@eltex-practice2-pg2-v21:~/eltex-practice2# git log --oneline -5
+e27c261 (HEAD -> main, origin/main) Update README from clone
+46bca65 log files of part 2 and 3 upload
+e7efd35 my first commit
