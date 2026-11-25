@@ -1,287 +1,271 @@
 
+#define _DEFAULT_SOURCE
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
 #include <string.h>
 #include <unistd.h>
 #include <signal.h>
-#include <errno.h>
 #include <time.h>
 #include <poll.h>
+#include <errno.h>
 
 #include <sys/socket.h>
-#include <net/ethernet.h>
-#include <netpacket/packet.h>
+#include <sys/types.h>
 #include <net/if.h>
+
 #include <arpa/inet.h>
-#include <netinet/in.h>
-#include <netinet/ip.h>
-#include <netinet/udp.h>
+
+#include <linux/if_packet.h>
+#include <linux/if_ether.h>
+#include <linux/ip.h>
+#include <linux/udp.h>
 
 #define BUFFER_SIZE 65536
 #define CHAT_PORT 50000
 #define DNS_PORT 53
 
-#define FILTER_CHAT 1
-#define FILTER_DNS  2
-#define FILTER_ALL  3
+#define IPV4_MORE_FRAGMENTS 0x2000
+#define IPV4_FRAGMENT_OFFSET 0x1FFF
+
+/* Same structure as the Task 6 chat program. */
+typedef struct {
+    uint32_t type;
+    uint32_t id;
+    char name[32];
+    char text[512];
+} ChatPacket;
+
+typedef enum {
+    FILTER_CHAT = 1,
+    FILTER_DNS = 2,
+    FILTER_ALL_UDP = 3
+} FilterType;
 
 static volatile sig_atomic_t running = 1;
+static struct timespec capture_start;
+static FILE *report_file = NULL;
+static unsigned long packet_count = 0;
 
-static void handle_signal(int signal_number)
+/* Stop capture when Ctrl+C is pressed. */
+void handle_signal(int signal_number)
 {
     (void)signal_number;
     running = 0;
 }
 
-/* Return elapsed seconds since capture started. */
-static double elapsed_time(struct timespec start)
+/* Calculate elapsed time since capture started. */
+double get_elapsed_time(void)
 {
     struct timespec now;
 
     clock_gettime(CLOCK_MONOTONIC, &now);
 
-    return (double)(now.tv_sec - start.tv_sec) +
-           (double)(now.tv_nsec - start.tv_nsec) / 1000000000.0;
+    return (double)(now.tv_sec - capture_start.tv_sec) +
+           (double)(now.tv_nsec - capture_start.tv_nsec) / 1000000000.0;
 }
 
 /* Print a MAC address. */
-static void print_mac(const unsigned char *mac)
+void print_mac(const unsigned char *mac)
 {
     printf("%02X:%02X:%02X:%02X:%02X:%02X",
            mac[0], mac[1], mac[2],
            mac[3], mac[4], mac[5]);
 }
 
-/* Convert an IPv4 address into readable text. */
-static void ip_to_string(uint32_t address, char *buffer, size_t size)
+/* Print an IPv4 address. */
+void print_ip(uint32_t address)
 {
-    struct in_addr ip;
+    char buffer[INET_ADDRSTRLEN];
 
+    struct in_addr ip;
     ip.s_addr = address;
-    inet_ntop(AF_INET, &ip, buffer, size);
+
+    if (inet_ntop(AF_INET, &ip, buffer, sizeof(buffer)) != NULL) {
+        printf("%s", buffer);
+    } else {
+        printf("Unknown");
+    }
 }
 
 /* Print payload as readable ASCII. */
-static void print_ascii(const unsigned char *data, size_t length)
+void print_ascii(const unsigned char *data, size_t length)
 {
-    size_t i;
-
-    for (i = 0; i < length; i++) {
+    for (size_t i = 0; i < length; i++) {
         unsigned char c = data[i];
 
-        if (c >= 32 && c <= 126)
+        if (c >= 32 && c <= 126) {
             putchar(c);
-        else
+        } else {
             putchar('.');
+        }
     }
-
-    putchar('\n');
 }
 
-/* Print payload as hexadecimal bytes. */
-static void print_hex(const unsigned char *data, size_t length)
+/* Save payload as hexadecimal characters. */
+void write_hex(FILE *file, const unsigned char *data, size_t length)
 {
-    size_t i;
+    for (size_t i = 0; i < length; i++) {
+        fprintf(file, "%02X ", data[i]);
 
-    for (i = 0; i < length; i++) {
-        printf("%02X ", data[i]);
-
-        if ((i + 1) % 16 == 0)
-            printf("\n");
+        if ((i + 1) % 16 == 0) {
+            fprintf(file, "\n");
+        }
     }
 
-    if (length % 16 != 0)
-        printf("\n");
+    if (length % 16 != 0) {
+        fprintf(file, "\n");
+    }
 }
 
-/*
- * Decode the chat packet from Task 6.
- *
- * This assumes Task 6 uses:
- *
- * typedef struct {
- *     uint32_t type;
- *     uint32_t id;
- *     char name[32];
- *     char text[512];
- * } Packet;
- *
- * Total size: 552 bytes.
- */
-static void decode_chat_packet(const unsigned char *data, size_t length)
+/* Decode a Task 6 chat packet. */
+void decode_chat_packet(const unsigned char *payload, size_t length)
 {
     uint32_t type;
     uint32_t id;
-    char name[33] = {0};
-    char message[513] = {0};
 
-    if (length < 40)
+    char name[33];
+    char message[513];
+
+    if (length < 40) {
+        printf("Chat packet is too short to decode.\n");
         return;
+    }
 
-    memcpy(&type, data, sizeof(type));
-    memcpy(&id, data + 4, sizeof(id));
-    memcpy(name, data + 8, 32);
+    memcpy(&type, payload, sizeof(type));
+    memcpy(&id, payload + 4, sizeof(id));
 
-    printf("Task 6 chat packet:\n");
-    printf("  Type: %u\n", type);
+    memcpy(name, payload + 8, 32);
+    name[32] = '\0';
+
+    size_t message_length = length - 40;
+
+    if (message_length > 512) {
+        message_length = 512;
+    }
+
+    memcpy(message, payload + 40, message_length);
+    message[message_length] = '\0';
+
+    printf("Chat packet details:\n");
+
+    printf("  Type: %u", type);
+
+    switch (type) {
+        case 1:
+            printf(" (JOIN)\n");
+            break;
+
+        case 2:
+            printf(" (CHAT)\n");
+            break;
+
+        case 3:
+            printf(" (LEAVE)\n");
+            break;
+
+        default:
+            printf(" (unknown)\n");
+            break;
+    }
+
     printf("  ID: %u\n", id);
     printf("  Name: %s\n", name);
-
-    if (length >= 552) {
-        memcpy(message, data + 40, 512);
-        printf("  Message: %s\n", message);
-    } else {
-        printf("  Message field is incomplete.\n");
-    }
+    printf("  Message: %s\n", message);
 }
 
-/*
- * Decode a basic DNS question name.
- * This handles ordinary uncompressed DNS QNAMEs.
- */
-static void decode_dns_packet(const unsigned char *data, size_t length)
+/* Decode a basic DNS question name. */
+void decode_dns_packet(const unsigned char *payload, size_t length)
 {
     size_t position = 12;
-    int first = 1;
 
     if (length < 12) {
-        printf("DNS payload is too short.\n");
+        printf("DNS packet is too short.\n");
         return;
     }
 
-    printf("DNS information:\n");
-    printf("  Transaction ID: 0x%02X%02X\n", data[0], data[1]);
+    uint16_t transaction_id;
+    uint16_t flags;
 
-    if (length < 13)
-        return;
+    memcpy(&transaction_id, payload, sizeof(transaction_id));
+    memcpy(&flags, payload + 2, sizeof(flags));
+
+    printf("DNS details:\n");
+    printf("  Transaction ID: 0x%04X\n", ntohs(transaction_id));
+    printf("  Flags: 0x%04X\n", ntohs(flags));
 
     printf("  Query name: ");
 
+    if (position >= length || payload[position] == 0) {
+        printf("(not available)\n");
+        return;
+    }
+
     while (position < length) {
-        unsigned int label_length = data[position++];
+        unsigned int label_length = payload[position++];
 
-        if (label_length == 0)
+        if (label_length == 0) {
             break;
+        }
 
-        /* Compression pointers are not decoded here. */
+        /* DNS compression pointers are not decoded here. */
         if ((label_length & 0xC0) != 0) {
-            printf("[compressed or unsupported name]");
-            break;
+            printf("(compressed or unsupported DNS name)\n");
+            return;
         }
 
         if (position + label_length > length) {
-            printf("[incomplete name]");
-            break;
+            printf("(invalid DNS name)\n");
+            return;
         }
 
-        if (!first)
-            putchar('.');
-
-        for (unsigned int i = 0; i < label_length; i++)
-            putchar(data[position + i]);
+        for (unsigned int i = 0; i < label_length; i++) {
+            putchar(payload[position + i]);
+        }
 
         position += label_length;
-        first = 0;
+
+        if (position < length && payload[position] != 0) {
+            putchar('.');
+        }
     }
 
     putchar('\n');
 }
 
-/* Save one captured packet to the report file. */
-static void save_report(
-    FILE *report,
-    double elapsed,
-    const unsigned char *source_mac,
-    const unsigned char *destination_mac,
-    const char *source_ip,
-    const char *destination_ip,
-    uint16_t source_port,
-    uint16_t destination_port,
-    size_t udp_length,
-    const unsigned char *payload,
-    size_t payload_length)
+/* Check whether packet matches selected filter. */
+int matches_filter(FilterType filter,
+                   uint16_t source_port,
+                   uint16_t destination_port)
 {
-    fprintf(report, "----------------------------------------\n");
-    fprintf(report, "Time since capture start: %.6f seconds\n", elapsed);
+    switch (filter) {
+        case FILTER_CHAT:
+            return source_port == CHAT_PORT ||
+                   destination_port == CHAT_PORT;
 
-    fprintf(report, "Source MAC: ");
-    for (int i = 0; i < 6; i++)
-        fprintf(report, "%02X%s", source_mac[i], i == 5 ? "\n" : ":");
+        case FILTER_DNS:
+            return source_port == DNS_PORT ||
+                   destination_port == DNS_PORT;
 
-    fprintf(report, "Destination MAC: ");
-    for (int i = 0; i < 6; i++)
-        fprintf(report, "%02X%s", destination_mac[i], i == 5 ? "\n" : ":");
+        case FILTER_ALL_UDP:
+            return 1;
 
-    fprintf(report, "Source IP: %s\n", source_ip);
-    fprintf(report, "Destination IP: %s\n", destination_ip);
-    fprintf(report, "Source UDP port: %u\n", source_port);
-    fprintf(report, "Destination UDP port: %u\n", destination_port);
-    fprintf(report, "UDP segment length: %zu bytes\n", udp_length);
-    fprintf(report, "UDP payload length: %zu bytes\n", payload_length);
-
-    fprintf(report, "Payload (ASCII): ");
-    for (size_t i = 0; i < payload_length; i++) {
-        unsigned char c = payload[i];
-        fputc((c >= 32 && c <= 126) ? c : '.', report);
+        default:
+            return 0;
     }
-    fprintf(report, "\n");
-
-    fprintf(report, "Payload (hex):\n");
-    for (size_t i = 0; i < payload_length; i++) {
-        fprintf(report, "%02X ", payload[i]);
-
-        if ((i + 1) % 16 == 0)
-            fprintf(report, "\n");
-    }
-
-    if (payload_length % 16 != 0)
-        fprintf(report, "\n");
-
-    fprintf(report, "\n");
-    fflush(report);
 }
 
-/* Check whether the UDP packet matches the selected filter. */
-static int matches_filter(
-    int filter,
-    uint16_t source_port,
-    uint16_t destination_port)
+/* Process one captured Ethernet frame. */
+void process_packet(const unsigned char *buffer,
+                    size_t packet_length,
+                    FilterType filter)
 {
-    if (filter == FILTER_CHAT)
-        return source_port == CHAT_PORT ||
-               destination_port == CHAT_PORT;
-
-    if (filter == FILTER_DNS)
-        return source_port == DNS_PORT ||
-               destination_port == DNS_PORT;
-
-    return filter == FILTER_ALL;
-}
-
-/*
- * Parse an Ethernet frame:
- * Ethernet -> optional VLAN -> IPv4 -> UDP.
- */
-static void process_packet(
-    const unsigned char *buffer,
-    size_t packet_length,
-    int filter,
-    struct timespec capture_start,
-    FILE *report,
-    unsigned long *packet_count)
-{
-    size_t offset = 0;
-    uint16_t ether_type;
+    struct ethhdr ethernet_header;
     struct iphdr ip_header;
     struct udphdr udp_header;
 
-    char source_ip[INET_ADDRSTRLEN];
-    char destination_ip[INET_ADDRSTRLEN];
-
-    const unsigned char *source_mac;
-    const unsigned char *destination_mac;
-
+    size_t offset = 0;
     size_t ip_header_length;
     size_t ip_total_length;
     size_t udp_length;
@@ -289,309 +273,409 @@ static void process_packet(
 
     const unsigned char *payload;
 
-    /* Ethernet header must be present. */
-    if (packet_length < sizeof(struct ethhdr))
+    uint16_t ether_type;
+    uint16_t source_port;
+    uint16_t destination_port;
+
+    double elapsed;
+
+    /* Check Ethernet header. */
+    if (packet_length < sizeof(struct ethhdr)) {
         return;
+    }
 
-    source_mac = buffer + 6;
-    destination_mac = buffer;
-
-    memcpy(&ether_type, buffer + 12, sizeof(ether_type));
-    ether_type = ntohs(ether_type);
+    memcpy(&ethernet_header, buffer, sizeof(ethernet_header));
 
     offset = sizeof(struct ethhdr);
+    ether_type = ntohs(ethernet_header.h_proto);
 
-    /* Handle one VLAN tag (802.1Q). */
-    if (ether_type == 0x8100 || ether_type == 0x88A8) {
-        if (packet_length < offset + 4)
+    /*
+     * Handle VLAN tags manually.
+     * Each VLAN tag contains 4 bytes.
+     */
+    while (ether_type == ETH_P_8021Q || ether_type == ETH_P_8021AD) {
+
+        if (packet_length < offset + 4) {
             return;
+        }
 
-        memcpy(&ether_type, buffer + offset + 2, sizeof(ether_type));
-        ether_type = ntohs(ether_type);
+        uint16_t encapsulated_protocol;
+
+        memcpy(&encapsulated_protocol,
+               buffer + offset + 2,
+               sizeof(encapsulated_protocol));
+
+        ether_type = ntohs(encapsulated_protocol);
 
         offset += 4;
     }
 
-    /* We only process IPv4. */
-    if (ether_type != ETH_P_IP)
+    /* Process IPv4 only. */
+    if (ether_type != ETH_P_IP) {
         return;
+    }
 
-    if (packet_length < offset + sizeof(struct iphdr))
+    if (packet_length < offset + sizeof(struct iphdr)) {
         return;
+    }
 
     memcpy(&ip_header, buffer + offset, sizeof(ip_header));
 
+    if (ip_header.version != 4 ||
+        ip_header.protocol != IPPROTO_UDP) {
+        return;
+    }
+
     ip_header_length = (size_t)ip_header.ihl * 4;
 
-    if (ip_header_length < sizeof(struct iphdr))
+    if (ip_header_length < sizeof(struct iphdr)) {
         return;
+    }
 
-    if (packet_length < offset + ip_header_length)
+    if (packet_length < offset + ip_header_length) {
         return;
-
-    if (ip_header.protocol != IPPROTO_UDP)
-        return;
-
-    /*
-     * Ignore fragmented IPv4 packets. This program does not
-     * reassemble fragments.
-     */
-    if (ntohs(ip_header.frag_off) & (IP_MF | IP_OFFMASK))
-        return;
+    }
 
     ip_total_length = ntohs(ip_header.tot_len);
 
-    if (ip_total_length < ip_header_length + sizeof(struct udphdr))
+    if (ip_total_length < ip_header_length + sizeof(struct udphdr)) {
         return;
+    }
 
-    if (ip_total_length > packet_length - offset)
+    if (ip_total_length > packet_length - offset) {
         return;
+    }
+
+    /*
+     * Skip fragmented IPv4 packets.
+     * This program does not reassemble fragments.
+     */
+    if (ntohs(ip_header.frag_off) &
+        (IPV4_MORE_FRAGMENTS | IPV4_FRAGMENT_OFFSET)) {
+        return;
+    }
 
     offset += ip_header_length;
 
-    if (packet_length < offset + sizeof(struct udphdr))
+    if (packet_length < offset + sizeof(struct udphdr)) {
         return;
+    }
 
     memcpy(&udp_header, buffer + offset, sizeof(udp_header));
 
+    source_port = ntohs(udp_header.source);
+    destination_port = ntohs(udp_header.dest);
     udp_length = ntohs(udp_header.len);
 
-    if (udp_length < sizeof(struct udphdr))
+    if (udp_length < sizeof(struct udphdr)) {
         return;
+    }
 
-    if (udp_length > ip_total_length - ip_header_length)
+    if (udp_length > ip_total_length - ip_header_length) {
         return;
+    }
 
-    payload_length = udp_length - sizeof(struct udphdr);
+    /* Apply selected filter. */
+    if (!matches_filter(filter, source_port, destination_port)) {
+        return;
+    }
+
     payload = buffer + offset + sizeof(struct udphdr);
+    payload_length = udp_length - sizeof(struct udphdr);
 
-    {
-        uint16_t source_port = ntohs(udp_header.source);
-        uint16_t destination_port = ntohs(udp_header.dest);
+    elapsed = get_elapsed_time();
+    packet_count++;
 
-        if (!matches_filter(filter, source_port, destination_port))
-            return;
+    /* Display packet information. */
+    printf("\n==================================================\n");
 
-        ip_to_string(ip_header.saddr, source_ip, sizeof(source_ip));
-        ip_to_string(ip_header.daddr, destination_ip, sizeof(destination_ip));
+    printf("Packet #%lu\n", packet_count);
+    printf("Time since capture started: %.6f seconds\n", elapsed);
 
-        (*packet_count)++;
+    printf("Source MAC:      ");
+    print_mac(ethernet_header.h_source);
+    printf("\n");
 
-        printf("\n========================================\n");
-        printf("Captured UDP packet #%lu\n", *packet_count);
-        printf("Time since capture start: %.6f seconds\n",
-               elapsed_time(capture_start));
+    printf("Destination MAC: ");
+    print_mac(ethernet_header.h_dest);
+    printf("\n");
 
-        printf("Source MAC: ");
-        print_mac(source_mac);
-        printf("\n");
+    printf("Source IP:       ");
+    print_ip(ip_header.saddr);
+    printf("\n");
 
-        printf("Destination MAC: ");
-        print_mac(destination_mac);
-        printf("\n");
+    printf("Destination IP:  ");
+    print_ip(ip_header.daddr);
+    printf("\n");
 
-        printf("Source IP: %s\n", source_ip);
-        printf("Destination IP: %s\n", destination_ip);
+    printf("Source UDP port:      %u\n", source_port);
+    printf("Destination UDP port: %u\n", destination_port);
 
-        printf("Source UDP port: %u\n", source_port);
-        printf("Destination UDP port: %u\n", destination_port);
+    printf("UDP segment length: %zu bytes\n", udp_length);
+    printf("UDP payload length: %zu bytes\n", payload_length);
 
-        printf("UDP segment length: %zu bytes\n", udp_length);
-        printf("UDP payload length: %zu bytes\n", payload_length);
+    printf("Payload (ASCII): ");
+    print_ascii(payload, payload_length);
+    printf("\n");
 
-        printf("\nPayload (ASCII):\n");
-        print_ascii(payload, payload_length);
+    /* Decode application data. */
+    if (filter == FILTER_CHAT) {
+        decode_chat_packet(payload, payload_length);
+    } else if (filter == FILTER_DNS) {
+        decode_dns_packet(payload, payload_length);
+    }
 
-        printf("\nPayload (hexadecimal):\n");
-        print_hex(payload, payload_length);
+    /* Save packet to report.txt. */
+    if (report_file != NULL) {
 
-        if (filter == FILTER_CHAT) {
-            printf("\n");
-            decode_chat_packet(payload, payload_length);
-        } else if (filter == FILTER_DNS) {
-            printf("\n");
-            decode_dns_packet(payload, payload_length);
+        fprintf(report_file, "==================================================\n");
+        fprintf(report_file, "Packet #%lu\n", packet_count);
+        fprintf(report_file,
+                "Time since capture started: %.6f seconds\n", elapsed);
+
+        fprintf(report_file, "Source MAC: ");
+
+        for (int i = 0; i < ETH_ALEN; i++) {
+            fprintf(report_file, "%02X%s",
+                    ethernet_header.h_source[i],
+                    i == ETH_ALEN - 1 ? "" : ":");
         }
 
-        save_report(
-            report,
-            elapsed_time(capture_start),
-            source_mac,
-            destination_mac,
-            source_ip,
-            destination_ip,
-            source_port,
-            destination_port,
-            udp_length,
-            payload,
-            payload_length
-        );
+        fprintf(report_file, "\nDestination MAC: ");
+
+        for (int i = 0; i < ETH_ALEN; i++) {
+            fprintf(report_file, "%02X%s",
+                    ethernet_header.h_dest[i],
+                    i == ETH_ALEN - 1 ? "" : ":");
+        }
+
+        char source_ip[INET_ADDRSTRLEN];
+        char destination_ip[INET_ADDRSTRLEN];
+
+        inet_ntop(AF_INET, &ip_header.saddr,
+                  source_ip, sizeof(source_ip));
+
+        inet_ntop(AF_INET, &ip_header.daddr,
+                  destination_ip, sizeof(destination_ip));
+
+        fprintf(report_file, "\nSource IP: %s\n", source_ip);
+        fprintf(report_file, "Destination IP: %s\n", destination_ip);
+
+        fprintf(report_file, "Source UDP port: %u\n", source_port);
+        fprintf(report_file, "Destination UDP port: %u\n", destination_port);
+
+        fprintf(report_file, "UDP segment length: %zu bytes\n", udp_length);
+        fprintf(report_file, "UDP payload length: %zu bytes\n", payload_length);
+
+        fprintf(report_file, "Payload (ASCII): ");
+
+        for (size_t i = 0; i < payload_length; i++) {
+            unsigned char c = payload[i];
+
+            fputc((c >= 32 && c <= 126) ? c : '.', report_file);
+        }
+
+        fprintf(report_file, "\nPayload (HEX):\n");
+
+        write_hex(report_file, payload, payload_length);
+
+        fflush(report_file);
     }
+}
+
+/* Display filter menu. */
+void print_filter_menu(void)
+{
+    printf("\nChoose packet filter:\n");
+    printf("1. Task 6 chat messages (UDP port %d)\n", CHAT_PORT);
+    printf("2. DNS packets (UDP port %d)\n", DNS_PORT);
+    printf("3. All IPv4 UDP packets\n");
+    printf("Your choice: ");
 }
 
 int main(void)
 {
     int raw_socket;
-    int filter;
+    int filter_choice;
     int duration;
+    int ch;
+
     char interface_name[IFNAMSIZ];
-    char input[32];
 
-    unsigned long packet_count = 0;
-
-    struct sockaddr_ll socket_address;
+    struct sockaddr_ll address;
     struct pollfd poll_descriptor;
 
     unsigned char buffer[BUFFER_SIZE];
 
-    struct timespec capture_start;
-    FILE *report;
+    printf("========== UDP RAW PACKET CAPTURE ==========\n");
 
-    printf("========== UDP RAW SNIFFER ==========\n\n");
+    /* Select filter. */
+    print_filter_menu();
 
-    printf("Choose a filter:\n");
-    printf("1. Task 6 chat messages (UDP port %d)\n", CHAT_PORT);
-    printf("2. DNS traffic (UDP port %d)\n", DNS_PORT);
-    printf("3. All UDP traffic\n");
-    printf("Your choice: ");
+    if (scanf("%d", &filter_choice) != 1 ||
+        filter_choice < 1 || filter_choice > 3) {
 
-    if (fgets(input, sizeof(input), stdin) == NULL)
-        return 1;
-
-    filter = atoi(input);
-
-    if (filter < FILTER_CHAT || filter > FILTER_ALL) {
-        fprintf(stderr, "Invalid filter.\n");
-        return 1;
+        fprintf(stderr, "Invalid filter choice.\n");
+        return EXIT_FAILURE;
     }
 
-    printf("Capture duration in seconds: ");
+    /* Select capture duration. */
+    printf("Enter capture duration in seconds (0 = until Ctrl+C): ");
 
-    if (fgets(input, sizeof(input), stdin) == NULL)
-        return 1;
-
-    duration = atoi(input);
-
-    if (duration <= 0) {
-        fprintf(stderr, "Duration must be greater than zero.\n");
-        return 1;
+    if (scanf("%d", &duration) != 1 || duration < 0) {
+        fprintf(stderr, "Invalid capture duration.\n");
+        return EXIT_FAILURE;
     }
 
-    printf("Network interface (for example eth0, enp0s3).\n");
+    /* Select network interface. */
+    printf("Enter network interface (e.g. eth0, ens33, enp0s3).\n");
     printf("Leave empty to capture on all interfaces: ");
 
-    if (fgets(interface_name, sizeof(interface_name), stdin) == NULL)
-        return 1;
+    while ((ch = getchar()) != '\n' && ch != EOF) {
+        /* Discard remaining input. */
+    }
 
-    interface_name[strcspn(interface_name, "\n")] = '\0';
+    if (fgets(interface_name, sizeof(interface_name), stdin) == NULL) {
+        interface_name[0] = '\0';
+    }
 
-    /* Create a raw packet socket. */
+    interface_name[strcspn(interface_name, "\r\n")] = '\0';
+
+    /* Create raw packet socket. */
     raw_socket = socket(AF_PACKET, SOCK_RAW, htons(ETH_P_ALL));
 
     if (raw_socket < 0) {
         perror("socket");
-        fprintf(stderr, "Run the program with sudo.\n");
-        return 1;
+        fprintf(stderr, "Run the program with sudo/root privileges.\n");
+        return EXIT_FAILURE;
     }
 
-    /* Bind to a selected network interface, if specified. */
-    memset(&socket_address, 0, sizeof(socket_address));
-    socket_address.sll_family = AF_PACKET;
-    socket_address.sll_protocol = htons(ETH_P_ALL);
+    memset(&address, 0, sizeof(address));
 
+    address.sll_family = AF_PACKET;
+    address.sll_protocol = htons(ETH_P_ALL);
+
+    /* Bind to selected interface, if specified. */
     if (strlen(interface_name) > 0) {
+
         unsigned int interface_index = if_nametoindex(interface_name);
 
         if (interface_index == 0) {
-            perror("if_nametoindex");
+            fprintf(stderr, "Unknown interface: %s\n", interface_name);
             close(raw_socket);
-            return 1;
+            return EXIT_FAILURE;
         }
 
-        socket_address.sll_ifindex = (int)interface_index;
+        address.sll_ifindex = (int)interface_index;
 
-        if (bind(raw_socket,
-                 (struct sockaddr *)&socket_address,
-                 sizeof(socket_address)) < 0) {
+        if (bind(raw_socket, (struct sockaddr *)&address,
+                 sizeof(address)) < 0) {
+
             perror("bind");
             close(raw_socket);
-            return 1;
+            return EXIT_FAILURE;
         }
     }
 
-    report = fopen("report.txt", "w");
+    /* Open report file. */
+    report_file = fopen("report.txt", "w");
 
-    if (report == NULL) {
+    if (report_file == NULL) {
         perror("fopen report.txt");
         close(raw_socket);
-        return 1;
+        return EXIT_FAILURE;
     }
 
-    fprintf(report, "UDP RAW capture report\n");
-    fprintf(report, "Filter: %d\n", filter);
-    fprintf(report, "Duration: %d seconds\n\n", duration);
+    fprintf(report_file, "UDP RAW packet capture report\n");
+    fprintf(report_file, "Filter: ");
+
+    if (filter_choice == FILTER_CHAT) {
+        fprintf(report_file, "Task 6 chat, UDP port %d\n", CHAT_PORT);
+    } else if (filter_choice == FILTER_DNS) {
+        fprintf(report_file, "DNS, UDP port %d\n", DNS_PORT);
+    } else {
+        fprintf(report_file, "All IPv4 UDP packets\n");
+    }
+
+    if (duration == 0) {
+        fprintf(report_file, "Capture duration: until Ctrl+C\n\n");
+    } else {
+        fprintf(report_file, "Capture duration: %d seconds\n\n", duration);
+    }
+
+    fflush(report_file);
+
+    /* Install Ctrl+C handler. */
+    signal(SIGINT, handle_signal);
+
+    /* Record capture start time. */
+    clock_gettime(CLOCK_MONOTONIC, &capture_start);
 
     poll_descriptor.fd = raw_socket;
     poll_descriptor.events = POLLIN;
+    poll_descriptor.revents = 0;
 
-    signal(SIGINT, handle_signal);
+    printf("\nCapture started.\n");
+    printf("Saving results to report.txt\n");
+    printf("Press Ctrl+C to stop capture.\n");
 
-    clock_gettime(CLOCK_MONOTONIC, &capture_start);
+    /* Main packet capture loop. */
+    while (running) {
 
-    printf("\nCapture started. Press Ctrl+C to stop early.\n");
-    printf("Results will be saved to report.txt\n");
+        int poll_result = poll(&poll_descriptor, 1, 500);
 
-    while (running && elapsed_time(capture_start) < duration) {
-        int result = poll(&poll_descriptor, 1, 500);
+        if (poll_result < 0) {
 
-        if (result < 0) {
-            if (errno == EINTR)
+            if (errno == EINTR) {
                 continue;
+            }
 
             perror("poll");
             break;
         }
 
-        if (result == 0)
-            continue;
+        if (poll_result > 0 &&
+            (poll_descriptor.revents & POLLIN)) {
 
-        if (poll_descriptor.revents & POLLIN) {
-            ssize_t received = recvfrom(
-                raw_socket,
-                buffer,
-                sizeof(buffer),
-                0,
-                NULL,
-                NULL
-            );
+            ssize_t received = recvfrom(raw_socket,
+                                        buffer,
+                                        sizeof(buffer),
+                                        0,
+                                        NULL,
+                                        NULL);
 
             if (received < 0) {
-                if (errno == EINTR)
+
+                if (errno == EINTR) {
                     continue;
+                }
 
                 perror("recvfrom");
                 break;
             }
 
-            process_packet(
-                buffer,
-                (size_t)received,
-                filter,
-                capture_start,
-                report,
-                &packet_count
-            );
+            process_packet(buffer,
+                           (size_t)received,
+                           (FilterType)filter_choice);
+        }
+
+        /* Stop automatically after selected duration. */
+        if (duration > 0 &&
+            get_elapsed_time() >= (double)duration) {
+            break;
         }
     }
 
-    printf("\n========================================\n");
-    printf("Capture finished.\n");
+    printf("\nCapture finished.\n");
     printf("Total captured matching packets: %lu\n", packet_count);
-    printf("Elapsed time: %.3f seconds\n", elapsed_time(capture_start));
-    printf("Report saved to report.txt\n");
+    printf("Results saved to report.txt\n");
 
-    fclose(report);
+    fprintf(report_file, "\nCapture finished.\n");
+    fprintf(report_file, "Total captured matching packets: %lu\n",
+            packet_count);
+
+    fclose(report_file);
     close(raw_socket);
 
-    return 0;
+    return EXIT_SUCCESS;
 }
